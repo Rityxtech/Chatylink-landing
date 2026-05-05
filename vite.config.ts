@@ -5,9 +5,13 @@ import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
+  // Set VITE_BASE_URL in your environment or hardcode your exact GitHub repo name (case-sensitive)
+  // For root deployment (username.github.io), use '/'
+  // For project pages (username.github.io/RepoName), use '/RepoName/'
+  const base = process.env.VITE_BASE_URL ?? '/Rankflow/';
   return {
     plugins: [react(), tailwindcss()],
-    base: '/Rankflow/',
+    base,
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
