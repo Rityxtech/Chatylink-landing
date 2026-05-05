@@ -4,7 +4,7 @@ import {
   Search, FileText, Target, Activity, Link2,
   CheckCircle2, ArrowUpRight, Database, LineChart, Zap, Shield, Webhook,
   Check, X, TrendingUp, Bell, Sparkles, Code, Terminal, Server, FastForward, CheckCircle,
-  Timer, Gauge, Brain, FileCode, Smartphone
+  Timer, Gauge, Brain, FileCode, Smartphone, ChevronDown
 } from 'lucide-react';
 
 export default function Home() {
@@ -28,11 +28,11 @@ function HeroSection() {
         {/* Center Text Block */}
         <div className="text-center w-full relative mb-16">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <h1 className="font-h1 text-on-surface leading-[1.1] tracking-tight text-3xl md:text-5xl lg:text-6xl font-black max-w-4xl mx-auto mb-4">
+            <h1 className="font-h1 text-on-surface leading-[1.1] tracking-tight text-3xl md:text-5xl lg:text-6xl font-black max-w-2xl lg:px-4 xl:px-0 mx-auto mb-4">
               <span className="md:hidden">Elevate Rankings with RankFlow</span>
-              <span className="hidden md:inline">Elevate Your Rankings with RankFlow<br />The Ultimate SEO Solution</span>
+              <span className="hidden md:inline">Elevate Your Rankings with RankFlow<br />The Ultimate Best SEO Solution</span>
             </h1>
-            <p className="font-body-md text-on-surface-variant max-w-2xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+            <p className="font-body-md text-on-surface-variant max-w-xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
               RankFlow combines cutting-edge technology with user-friendly features, making it the perfect companion for businesses & individuals looking to optimize Next.js sites.
             </p>
 
@@ -46,6 +46,42 @@ function HeroSection() {
                   Boost My Rankings <ArrowUpRight className="w-4 h-4" />
                 </button>
               </form>
+            </div>
+          </motion.div>
+
+          {/* Left Side: Floating Stats Card - Pages Crawled */}
+          <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3, duration: 0.8 }}
+            className="hidden lg:flex absolute top-4 left-4 flex-col items-start p-5 glass-card shadow-[0_8px_30px_rgba(0,0,0,0.08)] rounded-xl w-56 transform -rotate-2 hover:rotate-0 transition-transform cursor-pointer z-30">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-12 h-12 rounded bg-primary/10 flex items-center justify-center text-primary">
+                <Database className="w-6 h-6" />
+              </div>
+              <div className="text-left">
+                <p className="font-black text-2xl text-on-surface">300+</p>
+                <p className="text-[10px] uppercase tracking-wider font-bold text-primary">Pages Crawled</p>
+              </div>
+            </div>
+            <div className="flex items-center justify-between w-full mt-2">
+              <span className="text-xs text-on-surface-variant bg-surface-container-low px-2 py-1 rounded shadow-sm flex items-center gap-1">
+                May 2026 <ChevronDown className="w-3 h-3" />
+              </span>
+            </div>
+          </motion.div>
+
+          {/* Left Side: Floating Stats Card - Profits Earned */}
+          <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4, duration: 0.8 }}
+            className="hidden xl:flex absolute top-36 left-12 flex-col items-start p-5 glass-card shadow-[0_8px_30px_rgba(0,0,0,0.08)] rounded-xl w-56 transform rotate-2 hover:rotate-0 transition-transform cursor-pointer z-30">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-emerald-400/20 flex items-center justify-center text-emerald-500">
+                <span className="font-black text-xl">€</span>
+              </div>
+              <div className="text-left">
+                <p className="font-black text-2xl text-on-surface">60K+</p>
+                <p className="text-[10px] uppercase tracking-wider font-bold text-primary">Profits Earned</p>
+                <span className="text-[10px] text-on-surface-variant mt-1 flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded w-max shadow-sm">
+                  May 2026 <ChevronDown className="w-3 h-3" />
+                </span>
+              </div>
             </div>
           </motion.div>
 
