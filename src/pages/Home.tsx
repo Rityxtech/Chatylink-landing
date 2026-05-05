@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden w-full relative z-10 pt-[100px] md:pt-[120px]">
+    <main className="overflow-x-hidden w-full relative z-10 pt-[80px] md:pt-[120px]">
       <HeroSection />
       <TrustedBySection />
       <SolutionSection />
