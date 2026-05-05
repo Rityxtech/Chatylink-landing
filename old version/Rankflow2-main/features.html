@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Features - RankFlow</title>
+  <meta name="description"
+    content="RankFlow helps developers and businesses optimize Next.js sites for performance, SEO, and visibility. Get instant, actionable insights in seconds." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Features — RankFlow SEO Intelligence Platform" />
+  <meta property="og:description" content="Explore RankFlow features: real-time audits, keyword rank tracking, Core Web Vitals monitoring, AI recommendations, and deep Next.js/Vercel integration." />
+  <meta property="og:url" content="https://rankflow.io/features.html" />
+  <meta property="og:image" content="https://rankflow.io/assets/og-features.png" />
+  <meta property="og:site_name" content="RankFlow" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@RankFlowHQ" />
+  <meta name="twitter:title" content="Features — RankFlow SEO Intelligence Platform" />
+  <meta name="twitter:description" content="Explore RankFlow features: real-time audits, keyword rank tracking, Core Web Vitals monitoring, AI recommendations, and deep Next.js/Vercel integration." />
+  <meta name="twitter:image" content="https://rankflow.io/assets/og-features.png" />
+  <!-- Canonical + Robots -->
+  <link rel="canonical" href="https://rankflow.io/features.html" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#7C3AED" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          animation: {
+            'wave': 'wave 20s linear infinite',
+            'wave-slow': 'wave 35s linear infinite reverse',
+            'float': 'float 8s ease-in-out infinite',
+          },
+          keyframes: {
+            wave: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            }
+          },
+          colors: {
+            "primary": "#7C3AED", /* Vibrant Violet/Purple */
+            "primary-light": "#A78BFA", /* Soft Purple */
+            "accent": "#00E1D9", /* Bright Cyan for highlight/contrast */
+            "on-primary": "#ffffff",
+            "background": "#ffffff", /* White */
+            "on-background": "#0F172A", /* Slate 900 */
+            "surface": "#ffffff",
+            "on-surface": "#0F172A",
+            "surface-bright": "#ffffff",
+            "surface-container-low": "rgba(255, 255, 255, 0.6)",
+            "surface-container": "rgba(255, 255, 255, 0.7)",
+            "surface-container-high": "rgba(255, 255, 255, 0.8)",
+            "surface-container-highest": "rgba(255, 255, 255, 0.9)",
+            "outline": "#E2E8F0",
+            "outline-variant": "rgba(124, 58, 237, 0.15)", /* Soft purple tint */
+            "secondary": "#475569",  /* Slate 600 */
+            "on-secondary": "#ffffff",
+            "error": "#EF4444",
+            "on-error": "#ffffff",
+            "error-container": "#FEE2E2",
+            "on-error-container": "#991B1B",
+            "tertiary-container": "#F3E8FF",
+            "on-tertiary-container": "#6B21A8",
+            "primary-fixed-dim": "#8B5CF6",
+            "primary-container": "#F5F3FF",
+            "on-primary-container": "#4C1D95",
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            sm: "8px",
+            "container-max": "1280px",
+            gutter: "24px",
+            xl: "48px",
+            lg: "24px",
+            md: "16px",
+            unit: "4px",
+            xs: "4px"
+          },
+          fontFamily: {
+            "body-md": ["Inter"],
+            "display-lg": ["Inter"],
+            "title-sm": ["Inter"],
+            "headline-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "code-label": ["Inter"]
+          },
+          fontSize: {
+            "body-md": ["16px", { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" }],
+            "display-lg": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "title-sm": ["20px", { lineHeight: "1.4", letterSpacing: "0", fontWeight: "600" }],
+            "headline-md": ["30px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "body-sm": ["14px", { lineHeight: "1.5", letterSpacing: "0", fontWeight: "400" }],
+            "code-label": ["12px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* RF-GLOBAL-RESET */
+    html { margin: 0 !important; padding: 0 !important; }
+    body { margin: 0 !important; padding: 0 !important; }
+    footer { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .high-density-table tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    /* FAQ accordion animation */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .faq-answer.open {
+      max-height: 300px;
+    }
+
+    .faq-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    /* Hero character float animation */
+    @keyframes heroFloat {
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(-1deg);
+      }
+
+      50% {
+        transform: translateY(-18px) rotate(1deg);
+      }
+    }
+
+    .hero-character {
+      animation: heroFloat 5s ease-in-out infinite;
+      filter: drop-shadow(0 30px 40px rgba(124, 58, 237, 0.18));
+    }
+
+    /* --- PLACEHOLDER_REPLACED --- */
+      #auth-modal, #auth-backdrop {
+        z-index: 999999 !important; /* Force entirely above everything including the livechat widget */
+      }
+      #auth-panel {
+        height: 87vh !important; /* Strictly lock to ~87% of screen height natively */
+        max-height: 87vh !important;
+        overflow-y: hidden !important; 
+      }
+      #auth-panel .overflow-y-auto {
+        min-height: 100% !important;
+        height: 100% !important;
+        overflow-y: hidden !important; /* Nuke the internal scrolling completely */
+      }
+
+
+      /* ===================================================
+         FIX 2: About Us Mobile Hero Section — Full UI
+         =================================================== */
+
+      /* Hide the desktop two-column side-by-side hero layout */
+      .about-hero-desktop { display: none !important; }
+
+      /* Show the compact mobile hero card */
+      .about-hero-mobile {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 24px 16px 20px !important;
+        gap: 16px !important;
+      }
+
+      .about-hero-mobile .about-badge {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        background: rgba(124,58,237,0.1) !important;
+        border: 1px solid rgba(124,58,237,0.25) !important;
+        border-radius: 999px !important;
+        padding: 5px 14px !important;
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.15em !important;
+        color: #7C3AED !important;
+        text-transform: uppercase !important;
+      }
+
+      .about-hero-mobile h1 {
+        font-size: 1.65rem !important;
+        font-weight: 900 !important;
+        line-height: 1.15 !important;
+        color: #0F172A !important;
+        margin: 0 !important;
+      }
+
+      .about-hero-mobile h1 span.gradient-text {
+        background: linear-gradient(90deg, #7C3AED, #00E1D9) !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+      }
+
+      .about-hero-mobile p {
+        font-size: 12px !important;
+        color: #64748b !important;
+        line-height: 1.6 !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+      }
+
+      /* Mini stats row */
+      .about-hero-mobile .stats-row {
+        display: flex !important;
+        gap: 10px !important;
+        width: 100% !important;
+        justify-content: center !important;
+      }
+      .about-hero-mobile .stat-chip {
+        flex: 1 !important;
+        background: rgba(255,255,255,0.9) !important;
+        border: 1px solid rgba(124,58,237,0.15) !important;
+        border-radius: 14px !important;
+        padding: 10px 8px !important;
+        text-align: center !important;
+        box-shadow: 0 4px 16px rgba(124,58,237,0.08) !important;
+      }
+      .about-hero-mobile .stat-chip .stat-val {
+        font-size: 20px !important;
+        font-weight: 900 !important;
+        color: #7C3AED !important;
+        display: block !important;
+      }
+      .about-hero-mobile .stat-chip .stat-label {
+        font-size: 9px !important;
+        color: #64748b !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.08em !important;
+        display: block !important;
+        margin-top: 2px !important;
+      }
+
+      /* CTA Button row */
+      .about-hero-mobile .cta-row {
+        display: flex !important;
+        gap: 10px !important;
+        width: 100% !important;
+      }
+      .about-hero-mobile .cta-primary {
+        flex: 1 !important;
+        padding: 11px 0 !important;
+        background: linear-gradient(135deg, #7C3AED, #6D28D9) !important;
+        color: #fff !important;
+        border-radius: 12px !important;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        border: none !important;
+        cursor: pointer !important;
+        box-shadow: 0 6px 20px rgba(124,58,237,0.35) !important;
+      }
+      .about-hero-mobile .cta-secondary {
+        flex: 1 !important;
+        padding: 11px 0 !important;
+        background: transparent !important;
+        color: #7C3AED !important;
+        border-radius: 12px !important;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        border: 1.5px solid rgba(124,58,237,0.4) !important;
+        cursor: pointer !important;
+      }
+    }
+  </style>
+
+  <style>
+
+  /* ===================================================
+     DARK MODE SUPPORT
+     =================================================== */
+  html.dark body { background-color: #0f172a !important; color: #e2e8f0 !important; }
+  html.dark header { background: rgba(15,23,42,0.95) !important; border-color: rgba(255,255,255,0.08) !important; }
+  html.dark .bg-white\/90, html.dark .bg-white\/85, html.dark .bg-white, html.dark [class*='bg-white'] {
+    background: rgba(30,41,59,0.95) !important;
+  }
+  html.dark .text-on-surface, html.dark .text-on-background, html.dark .text-slate-900, html.dark h1, html.dark h2, html.dark h3 {
+    color: #e2e8f0 !important;
+  }
+  html.dark .text-secondary, html.dark .text-slate-600, html.dark .text-slate-500 { color: #94a3b8 !important; }
+  html.dark .border-slate-200, html.dark .border-outline-variant { border-color: rgba(255,255,255,0.1) !important; }
+  html.dark footer { background: #020617 !important; }
+  html.dark .bg-slate-900 { background: #020617 !important; }
+  html.dark .bg-background { background: #0f172a !important; }
+  html.dark .border-white\/80, html.dark .border-white\/10 { border-color: rgba(255,255,255,0.08) !important; }
+
+  /* Dark mode toggle button */
+  #theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(124,58,237,0.08);
+    border: 1px solid rgba(124,58,237,0.2);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    flex-shrink: 0;
+  }
+  #theme-toggle:hover { background: rgba(124,58,237,0.15); transform: scale(1.05); }
+  #theme-toggle .icon-sun, #theme-toggle .icon-moon { font-size: 18px; transition: opacity 0.2s; }
+  html:not(.dark) #theme-toggle .icon-moon { display: none; }
+  html.dark  #theme-toggle .icon-sun  { display: none; }
+
+</style>
+  <style>
+    html, body { margin: 0; padding: 0; box-sizing: border-box; }
+    footer { display: block; }
+  </style>
+  <style id="mobile-fixes">
+    @media (max-width: 767px) {
+      /* Force max 10px padding for structural classes */
+      .px-3, .px-4, .px-5, .px-6, .px-8, .px-10, .px-12, .px-16 { padding-left: 10px !important; padding-right: 10px !important; }
+      .py-3, .py-4, .py-5, .py-6, .py-8, .py-10, .py-12, .py-16, .py-20, .py-24, .py-32 { padding-top: 10px !important; padding-bottom: 10px !important; }
+      .p-3, .p-4, .p-5, .p-6, .p-8, .p-10, .p-12, .p-16 { padding: 10px !important; }
+      
+      /* Force tighter gaps */
+      .gap-3, .gap-4, .gap-5, .gap-6, .gap-8, .gap-10, .gap-12, .gap-16 { gap: 10px !important; }
+      
+      /* Flatten multiple column grids on mobile */
+      .grid-cols-2, .grid-cols-3, .grid-cols-4, .grid-cols-5, .grid-cols-6, .grid-cols-12 { grid-template-columns: 1fr !important; }
+      
+      /* Typography resizing for titles */
+      .text-3xl, .text-4xl, .text-5xl, .text-6xl, .text-7xl, .font-display-lg, .text-display-lg, .text-headline-md, .font-headline-md {
+        font-size: 1.5rem !important;
+        line-height: 1.25 !important;
+      }
+      .text-xl, .text-2xl {
+        font-size: 1.125rem !important;
+      }
+      
+      /* Width and container structural resets */
+      .w-\[400px\], .w-\[450px\], .w-\[500px\], .w-\[600px\], .w-\[800px\], 
+      .max-w-md, .max-w-lg, .max-w-xl, .max-w-2xl, .max-w-3xl, .max-w-4xl, .max-w-5xl, .max-w-7xl,
+      .col-span-12, .lg\:col-span-8, .lg\:col-span-4, .md\:col-span-2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+      }
+      
+      /* Footer and feature layout fixes */
+      footer .grid { 
+        grid-template-columns: 1fr !important; 
+        gap: 20px !important;
+      }
+      
+      /* Eliminate overflow from decorative background shapes */
+      .animate-wave, .animate-wave-slow, 
+      [class*="w-\[500px\]"], [class*="h-\[500px\]"],
+      [class*="w-\[600px\]"], [class*="h-\[600px\]"],
+      [class*="w-\[800px\]"], [class*="h-\[800px\]"] {
+        display: none !important;
+      }
+
+      /* Ensures no horizontal scrolling */
+      html, body {
+        overflow-x: hidden !important;
+        width: 100vw !important;
+      }
+      main, header, footer, section, div {
+        box-sizing: border-box !important;
+      }
+      
+            /* --- Footer Efficient View --- */
+      footer { padding: 15px 10px !important; max-height: none !important; }
+      footer .lg\:flex-row { 
+        flex-direction: column !important; 
+        gap: 15px !important; 
+        align-items: flex-start !important; 
+        border-bottom: none !important; 
+        margin-bottom: 5px !important; 
+        padding-bottom: 0 !important; 
+        display: flex !important;
+      }
+      footer .w-1\/2 { 
+        width: 100% !important; 
+        max-width: 100% !important; 
+        margin: 0 !important; 
+        gap: 10px !important; 
+      }
+      footer .grid { 
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important; 
+        gap: 10px !important; 
+        width: 100% !important;
+      }
+      footer ul { display: flex !important; flex-direction: column !important; gap: 4px !important; margin: 0 !important; }
+      footer li a { font-size: 10px !important; line-height: 1.2 !important; padding: 0 !important; }
+      footer p.text-slate-400, footer p.font-sans.max-w-sm, footer .pt-2 p { display: none !important; }
+      footer .text-2xl { font-size: 16px !important; }
+      footer form { max-width: 100% !important; }
+      footer input { padding: 6px 10px !important; font-size: 11px !important; }
+      footer button[type="submit"] { padding: 4px 8px !important; font-size: 10px !important; }
+      footer > div > div:last-child { flex-direction: row !important; justify-content: space-between !important; margin-top: 10 !important; }
+      footer > div > div:last-child p { font-size: 9px !important; }
+      footer .flex.items-center.gap-4 { gap: 8px !important; }
+      
+      
+      /* --- Testimonials JS Layout Fixes --- */
+      .rf-testi-track {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        gap: 16px !important;
+        width: max-content !important;
+        padding-bottom: 10px !important;
+        /* Allow JS to freely modify transform style without !important interfering */
+      }
+      .rf-testi-slide {
+        width: calc(100vw - 40px) !important;
+        min-width: calc(100vw - 40px) !important;
+        flex: 0 0 auto !important;
+      }
+      #testi-prev, #testi-next { display: none !important; }
+
+      
+
+      /* --- Auth Bottom Sheet (Modern Native Mobile) --- */
+      #auth-modal {
+        padding: 0 !important;
+      }
+      #auth-panel {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        border-radius: 32px 32px 0 0 !important; /* Standard modern bottom sheet rounding */
+        border-bottom: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        margin: 0 !important;
+        padding-bottom: env(safe-area-inset-bottom, 35px) !important;
+        padding-top: 15px !important; /* Breathing room for the drag pill */
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2) !important;
+      }
+      /* Modern iOS-style Drag Handle Pill */
+      #auth-panel::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 42px;
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 100px;
+        z-index: 100;
+      }
+      /* Hide the 'X' close button to force native swipe-down or tap-out behavior */
+      #auth-close {
+        display: none !important;
+      }
+      /* Restore generous, luxurious padding inside the modal that was globally squashed to 10px */
+      #auth-panel .px-6 { padding-left: 24px !important; padding-right: 24px !important; }
+      #auth-panel .pb-5 { padding-bottom: 20px !important; }
+      #auth-panel .pt-5 { padding-top: 24px !important; }
+      #auth-panel .p-6 { padding: 24px !important; }
+      #auth-panel form { padding-left: 24px !important; padding-right: 24px !important; padding-bottom: 24px !important; }
+      #auth-panel input { padding: 12px 16px !important; font-size: 14px !important; }
+      #auth-panel button[type="submit"] { padding: 14px !important; font-size: 14px !important; margin-top: 10px !important; }
+
+    }
+  </style>
+
+  <!-- ============================================== -->
+  <!-- 1. ANALYTICS & TRACKING PLACEHOLDERS           -->
+  <!-- ============================================== -->
+  <!-- Google Analytics / Tag Manager (Placeholder) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- Meta / Facebook Pixel (Placeholder) -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXXXXXX');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- ============================================== -->
+  <!-- 2. STRUCTURED DATA (SEO JSON-LD)               -->
+  <!-- ============================================== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RankFlow",
+      "operatingSystem": "Web Browser",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "29.00",
+        "priceCurrency": "USD"
+      },
+      "description": "Premium Next.js technical SEO audit layer and competitive performance intelligence."
+    }
+  </script>
+
+
+  <!-- Dark / Light Mode Toggle Script -->
+  <script>
+    (function() {
+      // Persist preference
+      const saved = localStorage.getItem('rf-theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        btn.addEventListener('click', () => {
+          const isDark = document.documentElement.classList.toggle('dark');
+          localStorage.setItem('rf-theme', isDark ? 'dark' : 'light');
+        });
+      });
+    })();
+  </script>
+</head>
+
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-bold">Skip to main content</a>
+
+  <!-- Animated Vector Background -->
+  <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z bg-background pointer-events-none">
+    <!-- Wavy Top -->
+    <div class="absolute top-0 left-0 w-[200%] flex opacity-15 animate-wave">
+      <svg viewBox="0 0 1440 320" class="w-[50%] h-auto fill-primary-light" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,133.3C672,139,768,181,864,197.3C960,213,1056,203,1152,181.3C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+      </svg>
+      <svg viewBox="0 0 1440 320" class="w-[50%] h-auto fill-primary-light" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,133.3C672,139,768,181,864,197.3C960,213,1056,203,1152,181.3C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+      </svg>
+    </div>
+    <!-- Wavy Top 2 (Slower, lighter) -->
+    <div class="absolute top-0 left-0 w-[200%] flex opacity-5 animate-wave-slow">
+      <svg viewBox="0 0 1440 320" class="w-[50%] h-auto fill-primary" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+      </svg>
+      <svg viewBox="0 0 1440 320" class="w-[50%] h-auto fill-primary" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+      </svg>
+    </div>
+    <!-- Floating Blobs inside the body -->
+    <div
+      class="absolute top-1/4 -right-20 w-[500px] h-[500px] bg-primary-light/10 rounded-full mix-blend-multiply filter blur-[80px] animate-float">
+    </div>
+    <div
+      class="absolute bottom-1/4 -left-20 w-[600px] h-[600px] bg-primary/10 rounded-full mix-blend-multiply filter blur-[100px] animate-float"
+      style="animation-delay: -2s;"></div>
+  </div>
+
+  <!-- TopNavBar --><!-- TopNavBar -->
+  <header class="bg-white/90 backdrop-blur-xl border-b border-slate-200 top-0 sticky z-50 transition-colors">
+    <nav class="flex justify-between items-center w-full h-16 px-6 max-w-7xl mx-auto">
+      <div class="flex items-center gap-5">
+        <span class="text-xl font-black tracking-tighter text-slate-900">RankFlow</span>
+        <div class="hidden md:flex gap-4 items-center">
+          <a class="text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+            href="index.html">Home</a>
+          <a class="text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+            href="#features">Features</a>
+          <a class="text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+            href="#pricing">Pricing</a>
+          <a class="text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+            href="about.html">About Us</a>
+          <a class="text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+            href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <a class="hidden md:block text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+          href="#" onclick="event.preventDefault(); if(window.openAuthModal) window.openAuthModal('login');">Login</a>
+        <button onclick="event.preventDefault(); if(window.openAuthModal) window.openAuthModal('register');"
+          class="bg-primary text-white px-5 py-2.5 rounded text-sm font-bold active:scale-90 transition-transform duration-150">Register</button>
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden text-slate-800 bg-white/50 backdrop-blur-md border border-slate-200/50 p-2 rounded-lg flex items-center justify-center shadow-sm ml-4 z-50">
+          <span class="material-symbols-outlined text-[20px]">menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="max-w-7xl mx-auto px-6 -10 z relative pt-5 pb-5">
+
+    <!-- Hero Section -->
+    <section class="-10 grid grid-cols-1 md:grid-cols-2 -6 items-center relative py-5">
+      <div>
+        <span
+          class="font-code-label text-[11px] text-primary uppercase mb-4 block px-3 py-1 bg-primary/10 rounded-full w-max border border-primary/20 tracking-widest font-black">Precision
+          Performance</span>
+        <h1 class="font-display-lg text-5xl text-on-background mb-2 leading-tight">
+        <span class="md:hidden text-3xl whitespace-nowrap">Surgical SEO Intelligence</span>
+        <span class="hidden md:inline">Surgical SEO Intelligence</span>
+      </h1>
+        <p class="text-secondary font-body-md max-w-lg mb-3 text-lg">
+        <span class="md:hidden text-xs whitespace-nowrap">High-density analytics for SEO pros.</span>
+        <span class="hidden md:inline">Deploy surgical precision to your search strategy. RankFlow provides high-density analytics for technical SEO professionals who demand zero latency and maximum data transparency.</span>
+      </p>
+        <div class="flex flex-wrap gap-4">
+          <button
+            class="bg-gradient-to-r from-violet-500 to-purple-600 text-white px-8 py-3 rounded text-sm font-bold shadow-[0_4px_14px_0_rgba(124,58,237,0.39)] hover:shadow-[0_6px_20px_rgba(124,58,237,0.23)] hover:scale-[1.02] transition-all"
+            onclick="if(window.openAuthModal) window.openAuthModal('register');">Launch Audit</button>
+          <button
+            class="border border-outline-variant bg-white/50 backdrop-blur text-on-surface px-8 py-3 rounded text-sm font-bold hover:bg-white/80 transition-all">View
+            API Docs</button>
+        </div>
+      </div>
+      <div
+        class="relative h-[400px] w-full bg-surface-container-high overflow-hidden border border-outline-variant rounded-xl shadow-2xl">
+        <img alt="Surgical SEO Intelligence"
+          class="w-full h-full object-cover mix-blend-multiply opacity-80 hover:opacity-100 hover:mix-blend-normal transition-all duration-500"
+          data-alt="A highly sophisticated abstract visualization of data streams and network nodes in a technical environment."
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDItlSj8FDI7R93IOZIAwMmouYMGX_KiNfuvGObXgg7Iz4GMIHJQ1cCTjEyRfoM__I-TUSFr_8gDhnATtz2-u6pzTZY8BolqYbnX9foVdklSih1kSkRBGYgxlCGLLESaQ12dAqYQh8J719Ur71J0xeFzK86JetadlgotuIE8coLF_EPSJte_NNCF5sWEgJPO31xZrUTZwj43p5v_81a52wQ-1hO8w-RTioNab-u6td5LFGPq65jw6S1MfgQaT9ih_PG3iH3_M0Ifnqp" />
+        <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent pointer-events-none"></div>
+      </div>
+    </section>
+
+    <!-- Feature Bento Grid -->
+    <section class="-10 relative py-5">
+      <div class="flex justify-between items-end mb-5 border-b border-outline-variant pb-4">
+        <div>
+          <h2 class="font-headline-md text-4xl text-on-background mb-2">Analytical Core</h2>
+          <p class="text-secondary font-body-sm text-lg">Dense data modules for technical oversight.</p>
+        </div>
+        <div class="text-right hidden sm:block">
+          <span
+            class="font-code-label text-[10px] text-outline border border-outline-variant px-2 py-1 rounded bg-white">LATENCY:
+            42MS</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Feature 1 -->
+        <div
+          class="bg-white/80 backdrop-blur shadow-sm border border-outline-variant rounded-xl p-6 flex flex-col justify-between group hover:border-primary hover:shadow-lg transition-all duration-300">
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-primary text-2xl">speed</span>
+            </div>
+            <h3 class="font-title-sm text-xl mb-2">Real-time Site Audits</h3>
+            <p class="text-sm text-secondary mb-3 leading-relaxed">Continuous crawling architecture that flags critical
+              regressions within seconds of deployment.</p>
+          </div>
+          <a class="font-code-label text-[11px] font-bold tracking-widest text-primary flex items-center gap-1 group-hover:gap-2 transition-all"
+            href="#">
+            TECHNICAL DEEP DIVE <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+        <!-- Feature 2 -->
+        <div
+          class="bg-white/80 backdrop-blur shadow-sm border border-outline-variant rounded-xl p-6 flex flex-col justify-between group hover:border-primary hover:shadow-lg transition-all duration-300">
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-primary text-2xl">monitoring</span>
+            </div>
+            <h3 class="font-title-sm text-xl mb-2">Competitive Intelligence</h3>
+            <p class="text-sm text-secondary mb-3 leading-relaxed">Reverse-engineer competitor keyword gaps and content
+              velocity with granular delta reports.</p>
+          </div>
+          <a class="font-code-label text-[11px] font-bold tracking-widest text-primary flex items-center gap-1 group-hover:gap-2 transition-all"
+            href="#">
+            TECHNICAL DEEP DIVE <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+        <!-- Feature 3 -->
+        <div
+          class="bg-white/80 backdrop-blur shadow-sm border border-outline-variant rounded-xl p-6 flex flex-col justify-between group hover:border-primary hover:shadow-lg transition-all duration-300">
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-primary text-2xl">analytics</span>
+            </div>
+            <h3 class="font-title-sm text-xl mb-2">Performance Benchmarking</h3>
+            <p class="text-sm text-secondary mb-3 leading-relaxed">Core Web Vitals tracking with per-request profiling
+              and server-side timing analysis.</p>
+          </div>
+          <a class="font-code-label text-[11px] font-bold tracking-widest text-primary flex items-center gap-1 group-hover:gap-2 transition-all"
+            href="#">
+            TECHNICAL DEEP DIVE <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+        <!-- Feature 4 -->
+        <div
+          class="bg-white/80 backdrop-blur shadow-sm border border-outline-variant rounded-xl p-6 flex flex-col justify-between group hover:border-primary hover:shadow-lg transition-all duration-300">
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-primary text-2xl">location_on</span>
+            </div>
+            <h3 class="font-title-sm text-xl mb-2">SERP Tracking</h3>
+            <p class="text-sm text-secondary mb-3 leading-relaxed">Hyper-local ranking data with device-specific
+              rendering verification and rich result tracking.</p>
+          </div>
+          <a class="font-code-label text-[11px] font-bold tracking-widest text-primary flex items-center gap-1 group-hover:gap-2 transition-all"
+            href="#">
+            TECHNICAL DEEP DIVE <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+        <!-- Feature 5 -->
+        <div
+          class="bg-white/80 backdrop-blur shadow-sm border border-outline-variant rounded-xl p-6 flex flex-col justify-between group hover:border-primary hover:shadow-lg transition-all duration-300">
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-primary text-2xl">link</span>
+            </div>
+            <h3 class="font-title-sm text-xl mb-2">Backlink Health</h3>
+            <p class="text-sm text-secondary mb-3 leading-relaxed">Real-time link graph monitoring with automated toxic
+              link detection and recovery workflows.</p>
+          </div>
+          <a class="font-code-label text-[11px] font-bold tracking-widest text-primary flex items-center gap-1 group-hover:gap-2 transition-all"
+            href="#">
+            TECHNICAL DEEP DIVE <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+        <!-- Feature 6 -->
+        <div
+          class="bg-white/80 backdrop-blur shadow-sm border border-outline-variant rounded-xl p-6 flex flex-col justify-between group hover:border-primary hover:shadow-lg transition-all duration-300">
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-primary text-2xl">psychology</span>
+            </div>
+            <h3 class="font-title-sm text-xl mb-2">AI-Driven Insights</h3>
+            <p class="text-sm text-secondary mb-3 leading-relaxed">Proprietary neural networks that predict volatility
+              and suggest content structural adjustments.</p>
+          </div>
+          <a class="font-code-label text-[11px] font-bold tracking-widest text-primary flex items-center gap-1 group-hover:gap-2 transition-all"
+            href="#">
+            TECHNICAL DEEP DIVE <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next.js Native Optimizations -->
+    <section class="-10 relative py-5">
+      <div
+        class="bg-slate-900 border border-slate-800 text-white shadow-2xl rounded-3xl -8 grid grid-cols-1 lg:grid-cols-2 -6 overflow-hidden relative">
+        <div class="absolute -top-32 -left-32 w-64 h-64 bg-primary/30 rounded-full blur-[80px]"></div>
+        <div class="relative z">
+          <h2 class="font-headline-md text-3xl mb-2">Next.js Native Optimizations</h2>
+          <p class="font-body-md text-slate-400 mb-3 max-w-md leading-relaxed text-lg">
+            Direct integration with Vercel and Next.js internal APIs. We monitor your App Router performance at the
+            middleware level, ensuring every route segment is indexed optimally.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent text-xl">check_circle</span>
+              <span class="font-body-sm text-base text-slate-300">Automatic Image Alt-tag Injection</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent text-xl">check_circle</span>
+              <span class="font-body-sm text-base text-slate-300">Server Component Metadata Validation</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent text-xl">check_circle</span>
+              <span class="font-body-sm text-base text-slate-300">ISR Cache Invalidation Tracking</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="relative z flex items-center justify-center">
+          <div
+            class="bg-black/80 rounded-xl p-6 font-mono text-[13px] border border-white/10 w-full shadow-2xl relative overflow-hidden backdrop-blur-md">
+            <div class="flex gap-2 mb-5">
+              <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+            </div>
+            <code class="block text-accent mb-2">// rankflow.config.ts</code>
+            <code class="block text-white mt-1">export default defineRankFlow({</code>
+            <code class="block text-white pl-4 mt-1">framework: <span class="text-emerald-400">'nextjs'</span>,</code>
+            <code class="block text-white pl-4 mt-1">appRouter: <span class="text-violet-400">true</span>,</code>
+            <code class="block text-white pl-4 mt-1">audit: {</code>
+            <code class="block text-white pl-8 mt-1">lcp_threshold: <span class="text-orange-400">1200</span>,</code>
+            <code
+              class="block text-white pl-8 mt-1">metadata_check: <span class="text-emerald-400">'strict'</span></code>
+            <code class="block text-white pl-4 mt-1">}</code>
+            <code class="block text-white mt-1">});</code>
+            <div
+              class="absolute bottom-4 right-4 bg-primary/20 border border-primary/30 px-3 py-1 rounded text-primary-light font-code-label text-[10px] uppercase font-bold tracking-widest">
+              VERIFIED_BUILD</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metric Table Section -->
+    <section class="-10 relative py-5">
+      <h2 class="font-headline-md text-3xl mb-2 border-b border-outline-variant pb-4">Technical Performance Specs</h2>
+      <div
+        class="w-full border border-outline-variant rounded-xl overflow-hidden shadow-sm bg-white/50 backdrop-blur-sm">
+        <div
+          class="grid grid-cols-4 bg-slate-50 border-b border-outline-variant p-4 font-code-label text-[11px] text-slate-500 tracking-widest">
+          <div class="pl-4 uppercase font-bold">Metric Identifier</div>
+          <div class="uppercase font-bold">Standard Latency</div>
+          <div class="uppercase font-bold">RankFlow Delta</div>
+          <div class="uppercase font-bold">Accuracy</div>
+        </div>
+        <div
+          class="grid grid-cols-4 p-4 font-body-sm border-b border-outline-variant/50 hover:bg-white transition-colors">
+          <div class="pl-4 font-semibold text-slate-900">Core Index Audit</div>
+          <div class="text-secondary text-base">2.4s</div>
+          <div class="text-primary font-bold text-base">0.3s</div>
+          <div class="text-secondary text-base">99.99%</div>
+        </div>
+        <div
+          class="grid grid-cols-4 p-4 font-body-sm border-b border-outline-variant/50 bg-slate-50/50 hover:bg-white transition-colors">
+          <div class="pl-4 font-semibold text-slate-900">SERP Propagation</div>
+          <div class="text-secondary text-base">15m</div>
+          <div class="text-primary font-bold text-base">12s</div>
+          <div class="text-secondary text-base">100%</div>
+        </div>
+        <div class="grid grid-cols-4 p-4 font-body-sm hover:bg-white transition-colors">
+          <div class="pl-4 font-semibold text-slate-900">Link Graph Analysis</div>
+          <div class="text-secondary text-base">45s</div>
+          <div class="text-primary font-bold text-base">4s</div>
+          <div class="text-secondary text-base">99.2%</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section
+      class="-10 -10 text-center rounded-3xl relative overflow-hidden bg-primary shadow-2xl border border-white/10 py-5">
+      <div class="relative z -8 -8">
+        <h2 class="font-display-lg text-4xl md:text-5xl mb-2 font-black text-white">Ready to optimize?</h2>
+        <p class="font-body-md text-lg text-white/80 mb max-w-lg mx-auto">Start your audit in under 3 seconds.
+          Experience zero latency SEO auditing.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <button
+            class="bg-white text-primary px-8 py-3 font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all outline-none"
+            onclick="if(window.openAuthModal) window.openAuthModal('register');">Start Free Audit</button>
+          <button
+            class="border border-white/30 bg-primary-light/10 text-white px-8 py-3 font-bold rounded-xl hover:bg-white/10 transition-all outline-none">Contact
+            Sales</button>
+        </div>
+      </div>
+      <!-- Decorative circles -->
+      <div
+        class="absolute -top-32 -left-32 w-[600px] h-[600px] bg-white/10 rounded-full blur-[100px] pointer-events-none">
+      </div>
+      <div
+        class="absolute -bottom-32 -right-32 w-[600px] h-[600px] bg-accent/20 rounded-full blur-[120px] pointer-events-none">
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer class="bg-slate-50 border-t border-slate-200 py-5 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-5">
+      <div class="space-y-3">
+        <span class="text-xl font-bold text-slate-900">RankFlow</span>
+        <p class="font-sans text-sm text-slate-500 max-w-xs">Technical SEO analytics built for the modern web
+          ecosystem.
+          Fast, surgical, and reliable.</p>
+        <p class="font-sans text-sm text-slate-500">© 2024 RankFlow. Technical SEO Analytics.</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-5">
+        <div class="space-y-3">
+          <p class="text-[11px] font-code-label text-outline uppercase tracking-widest">Product</p>
+          <ul class="space-y-2">
+            <li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all opacity-80 hover:opacity-100"
+                href="#features">Features</a></li>
+            <li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all opacity-80 hover:opacity-100"
+                href="#pricing">Pricing</a></li>
+            <li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all opacity-80 hover:opacity-100"
+                href="#">Status</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <p class="text-[11px] font-code-label text-outline uppercase tracking-widest">Resources</p>
+          <ul class="space-y-2">
+            <li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all opacity-80 hover:opacity-100"
+                href="#">Documentation</a></li>
+            <li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all opacity-80 hover:opacity-100"
+                href="#">Guides</a></li>
+            <li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all opacity-80 hover:opacity-100"
+                href="#">API</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <p class="text-[11px] font-code-label text-outline uppercase tracking-widest">Legal</p>
+          <ul class="space-y-2">
+            <li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all opacity-80 hover:opacity-100"
+                href="#">Privacy</a></li>
+            <li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all opacity-80 hover:opacity-100"
+                href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAQ accordion script -->
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-answer').classList.remove('open');
+      });
+
+      // Open clicked if it was closed
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.classList.add('open');
+      }
+    }
+  </script>
+
+  <!-- Auth Modal -->
+  <div id="auth-modal"
+    class="fixed inset-0 z-[100] flex items-end md:items-center justify-center pointer-events-none opacity-0 transition-opacity duration-300">
+    <!-- Backdrop -->
+    <div id="auth-backdrop"
+      class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm transition-opacity duration-300 opacity-0">
+    </div>
+
+    <!-- Modal Container -->
+    <div id="auth-panel"
+      class="relative w-[90%] md:w-[420px] bg-slate-900/60 backdrop-blur-3xl border border-white/10 shadow-[0_0_80px_-15px_rgba(124,58,237,0.5)] 
+      rounded-3xl overflow-hidden transform translate-y-full md:translate-y scale-100 transition-all duration-500 flex flex-col max-h-[90vh]">
+
+      <!-- Close button -->
+      <button aria-label="Close authentication modal" id="auth-close"
+        class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white rounded-full transition-colors z-20 backdrop-blur-md">
+        <span class="material-symbols-outlined text-[18px]">close</span>
+      </button>
+
+      <!-- Decorative abstract shapes -->
+      <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z">
+        <div
+          class="absolute -top-24 -left-24 w-48 h-48 bg-primary rounded-full mix-blend-screen filter blur-[80px] opacity-30">
+        </div>
+        <div
+          class="absolute -bottom-24 -right-24 w-48 h-48 bg-accent rounded-full mix-blend-screen filter blur-[80px] opacity-15">
+        </div>
+      </div>
+
+      <!-- Header & Pill Toggle -->
+      <div class="px-6 pt-5 pb-4 relative z flex flex-col items-center">
+        <div
+          class="w h bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-3 shadow-[0_0_20px_rgba(124,58,237,0.4)]">
+          <span class="material-symbols-outlined text-white text-xl font-black">lock</span>
+        </div>
+        <h2 id="auth-title" class="text-xl font-black text-white tracking-tight mb-2">Welcome Back</h2>
+
+        <!-- Pill Toggle -->
+        <div class="flex bg-white/5 backdrop-blur-md p-1 rounded-xl w-full border border-white/10 relative">
+          <div id="auth-pill-active"
+            class="absolute top-1 left-1 bottom-1 w-[calc(50%-4px)] bg-white/10 rounded-lg shadow-sm border border-white/5 transition-transform duration-300">
+          </div>
+          <button id="tab-login" class="flex-1 py-1.5 text-xs font-bold text-white transition-all relative z">Sign
+            In</button>
+          <button id="tab-register"
+            class="flex-1 py-1.5 text-xs font-bold text-slate-400 hover:text-white transition-all relative z">Register</button>
+        </div>
+      </div>
+
+      <!-- Scrollable form area -->
+      <div class="px-6 pb-5 overflow-y-auto relative z overflow-x-hidden min-h-[290px]">
+
+        <!-- Login Form -->
+        <form id="form-login" class="space-y-3 transition-all duration-300 absolute inset-0 px-6 pb-5 pt-1 z">
+          <div>
+            <input type="email" required placeholder="Email Address"
+              class="w-full px-4 py-2.5 bg-slate-950/40 border border-white/10 rounded-xl text-white text-xs placeholder:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all shadow-inner">
+          </div>
+          <div>
+            <input type="password" required placeholder="Password"
+              class="w-full px-4 py-2.5 bg-slate-950/40 border border-white/10 rounded-xl text-white text-xs placeholder:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all shadow-inner">
+            <div class="flex justify-end mt-1.5">
+              <a href="#" id="link-forgot"
+                class="text-[10px] font-bold text-primary hover:text-primary-light transition-colors">Forgot
+                Password?</a>
+            </div>
+          </div>
+          <button type="submit"
+            class="w-full bg-white text-slate-900 py-2.5 rounded-xl text-xs font-bold shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] hover:-translate-y-0.5 transition-all outline-none mt-2">
+            Sign In
+          </button>
+
+          <div class="relative mt-5 mb-4">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full border-t border-white/10"></div>
+            </div>
+            <div class="relative flex justify-center text-[9px] uppercase font-bold tracking-widest text-slate-500">
+              <span class="bg-slate-900/60 backdrop-blur-none px-2 rounded">Or continue with</span>
+            </div>
+          </div>
+
+          <button type="button"
+            class="w-full bg-white/5 hover:bg-white/10 border border-white/10 text-white py-2.5 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-2 backdrop-blur-md">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57C19.32 17.26 21 14.95 21 12c0-.52-.05-1.03-.13-1.52z" />
+              <path fill="#ffffff"
+                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+              <path fill="#ffffff"
+                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+              <path fill="#ffffff"
+                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+            </svg>
+            Google
+          </button>
+        </form>
+
+        <!-- Register Form -->
+        <form id="form-register"
+          class="space-y-3 transition-all duration-300 absolute inset-0 px-6 pb-5 pt-1 opacity-0 translate-x pointer-events-none z-0 hidden">
+          <div class="grid grid-cols-2 gap-2">
+            <input type="text" required placeholder="First Name"
+              class="w-full px-4 py-2.5 bg-slate-950/40 border border-white/10 rounded-xl text-white text-xs placeholder:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all shadow-inner">
+            <input type="text" required placeholder="Last Name"
+              class="w-full px-4 py-2.5 bg-slate-950/40 border border-white/10 rounded-xl text-white text-xs placeholder:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all shadow-inner">
+          </div>
+          <input type="email" required placeholder="Email Address"
+            class="w-full px-4 py-2.5 bg-slate-950/40 border border-white/10 rounded-xl text-white text-xs placeholder:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all shadow-inner">
+          <input type="password" required placeholder="Create Password"
+            class="w-full px-4 py-2.5 bg-slate-950/40 border border-white/10 rounded-xl text-white text-xs placeholder:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all shadow-inner">
+
+          <button type="submit"
+            class="w-full bg-white text-slate-900 py-2.5 rounded-xl text-xs font-bold shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] hover:-translate-y-0.5 transition-all outline-none mt-2">
+            Create Account
+          </button>
+
+          <div class="relative mt-5 mb-4">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full border-t border-white/10"></div>
+            </div>
+            <div class="relative flex justify-center text-[9px] uppercase font-bold tracking-widest text-slate-500">
+              <span class="bg-slate-900/60 backdrop-blur-none px-2 rounded">Or continue with</span>
+            </div>
+          </div>
+
+          <button type="button"
+            class="w-full bg-white/5 hover:bg-white/10 border border-white/10 text-white py-2.5 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-2 backdrop-blur-md">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57C19.32 17.26 21 14.95 21 12c0-.52-.05-1.03-.13-1.52z" />
+              <path fill="#ffffff"
+                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+              <path fill="#ffffff"
+                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+              <path fill="#ffffff"
+                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+            </svg>
+            Google
+          </button>
+        </form>
+
+        <!-- Forgot Password Form -->
+        <form id="form-forgot"
+          class="space-y-3 transition-all duration-300 absolute inset-0 px-6 pb-5 pt-1 opacity-0 translate-x pointer-events-none z-0 hidden">
+          <p class="text-[11px] text-slate-400 mb-3 text-center leading-relaxed px-4">Enter the email address you used
+            when you joined and we’ll send you instructions to reset your password.</p>
+          <input type="email" required placeholder="Email Address"
+            class="w-full px-4 py-2.5 bg-slate-950/40 border border-white/10 rounded-xl text-white text-xs placeholder:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all shadow-inner">
+
+          <button type="submit"
+            class="w-full bg-white text-slate-900 py-2.5 rounded-xl text-xs font-bold shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] hover:-translate-y-0.5 transition-all outline-none mt-2">
+            Send Reset Link
+          </button>
+
+          <div class="mt-5 pt-4 border-t border-white/10 flex justify-center">
+            <a href="#" id="link-back-login"
+              class="text-[11px] font-bold text-slate-400 hover:text-white transition-colors flex items-center justify-center gap-1">
+              <span class="material-symbols-outlined text-[14px]">arrow_back</span>
+              Back to Login
+            </a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Auth Modal Logic
+    (function initAuthModal() {
+      const authModal = document.getElementById('auth-modal');
+      const authBackdrop = document.getElementById('auth-backdrop');
+      const authPanel = document.getElementById('auth-panel');
+      const authClose = document.getElementById('auth-close');
+
+      const tabLogin = document.getElementById('tab-login');
+      const tabRegister = document.getElementById('tab-register');
+      const formLogin = document.getElementById('form-login');
+      const formRegister = document.getElementById('form-register');
+      const formForgot = document.getElementById('form-forgot');
+      const linkForgot = document.getElementById('link-forgot');
+      const linkBackLogin = document.getElementById('link-back-login');
+
+      if (!authModal) return;
+
+      function openModal(mode = 'login') {
+        document.body.style.overflow = 'hidden';
+        authModal.classList.remove('pointer-events-none');
+        authModal.classList.add('opacity-100');
+        authModal.classList.remove('opacity-0');
+
+        authBackdrop.classList.add('opacity-100');
+        authBackdrop.classList.remove('opacity-0');
+
+        authPanel.classList.remove('translate-y-full', 'md:translate-y');
+        authPanel.classList.add('translate-y-0', 'md:translate-y-0');
+
+        if (mode === 'register') {
+          switchTab('register');
+        } else {
+          switchTab('login');
+        }
+      }
+
+      window.openAuthModal = openModal;
+
+      function closeModal() {
+        document.body.style.overflow = '';
+        authModal.classList.add('pointer-events-none');
+        authModal.classList.remove('opacity-100');
+        authModal.classList.add('opacity-0');
+
+        authBackdrop.classList.remove('opacity-100');
+        authBackdrop.classList.add('opacity-0');
+
+        authPanel.classList.add('translate-y-full', 'md:translate-y');
+        authPanel.classList.remove('translate-y-0', 'md:translate-y-0');
+      }
+
+      function switchTab(tab) {
+        const title = document.getElementById('auth-title');
+        const pillActive = document.getElementById('auth-pill-active');
+        const pillContainer = pillActive ? pillActive.parentElement : null;
+        if (pillContainer) pillContainer.style.transition = 'opacity 0.3s ease';
+
+        if (tab === 'login') {
+          if (title) title.textContent = 'Welcome Back';
+          if (pillContainer) pillContainer.classList.remove('opacity-0', 'pointer-events-none');
+          if (pillActive) pillActive.style.transform = 'translateX(0)';
+
+          tabLogin.classList.remove('text-slate-400');
+          tabLogin.classList.add('text-white');
+          tabRegister.classList.remove('text-white');
+          tabRegister.classList.add('text-slate-400');
+
+          formRegister.classList.add('opacity-0', 'translate-x', 'pointer-events-none', 'z-0');
+          formRegister.classList.remove('z');
+          setTimeout(() => { formRegister.classList.add('hidden'); }, 300);
+
+          if (formForgot) {
+            formForgot.classList.add('opacity-0', 'translate-x', 'pointer-events-none', 'z-0');
+            formForgot.classList.remove('z');
+            setTimeout(() => { formForgot.classList.add('hidden'); }, 300);
+          }
+
+          formLogin.classList.remove('hidden');
+          void formLogin.offsetWidth; // Reflow
+          formLogin.classList.remove('opacity-0', '-translate-x', 'translate-x', 'pointer-events-none');
+          formLogin.classList.add('translate-x-0', 'z');
+        } else if (tab === 'register') {
+          if (title) title.textContent = 'Create Account';
+          if (pillContainer) pillContainer.classList.remove('opacity-0', 'pointer-events-none');
+          if (pillActive) pillActive.style.transform = 'translateX(100%)';
+
+          tabRegister.classList.remove('text-slate-400');
+          tabRegister.classList.add('text-white');
+          tabLogin.classList.remove('text-white');
+          tabLogin.classList.add('text-slate-400');
+
+          formLogin.classList.add('opacity-0', '-translate-x', 'pointer-events-none', 'z-0');
+          formLogin.classList.remove('z');
+          setTimeout(() => { formLogin.classList.add('hidden'); }, 300);
+
+          if (formForgot) {
+            formForgot.classList.add('opacity-0', 'translate-x', 'pointer-events-none', 'z-0');
+            formForgot.classList.remove('z');
+            setTimeout(() => { formForgot.classList.add('hidden'); }, 300);
+          }
+
+          formRegister.classList.remove('hidden');
+          void formRegister.offsetWidth; // Reflow
+          formRegister.classList.remove('opacity-0', 'translate-x', '-translate-x', 'pointer-events-none');
+          formRegister.classList.add('translate-x-0', 'z');
+        } else if (tab === 'forgot') {
+          if (title) title.textContent = 'Reset Password';
+          if (pillContainer) pillContainer.classList.add('opacity-0', 'pointer-events-none');
+
+          formLogin.classList.add('opacity-0', '-translate-x', 'pointer-events-none', 'z-0');
+          formLogin.classList.remove('z');
+          setTimeout(() => { formLogin.classList.add('hidden'); }, 300);
+
+          formRegister.classList.add('opacity-0', '-translate-x', 'pointer-events-none', 'z-0');
+          formRegister.classList.remove('z');
+          setTimeout(() => { formRegister.classList.add('hidden'); }, 300);
+
+          if (formForgot) {
+            formForgot.classList.remove('hidden');
+            void formForgot.offsetWidth; // Reflow
+            formForgot.classList.remove('opacity-0', 'translate-x', '-translate-x', 'pointer-events-none');
+            formForgot.classList.add('translate-x-0', 'z');
+          }
+        }
+      }
+
+      authClose.addEventListener('click', closeModal);
+      authBackdrop.addEventListener('click', closeModal);
+      tabLogin.addEventListener('click', () => switchTab('login'));
+      tabRegister.addEventListener('click', () => switchTab('register'));
+      if (linkForgot) linkForgot.addEventListener('click', (e) => { e.preventDefault(); switchTab('forgot'); });
+      if (linkBackLogin) linkBackLogin.addEventListener('click', (e) => { e.preventDefault(); switchTab('login'); });
+
+      // Attach to buttons across the site dynamically
+      document.body.addEventListener('click', (e) => {
+        const link = e.target.closest('a, button');
+        if (!link) return;
+
+        let text = link.textContent.trim();
+        // Determine if it's a login trigger
+        if (text === 'Login' || text === 'Sign In') {
+          e.preventDefault();
+          openModal('login');
+        }
+        // Determine if it's a register trigger
+        else if (text.includes('Run Free Audit') || text.includes('Boost My Rankings') || text === 'Get Started' || text === 'Start Free Trial') {
+          e.preventDefault();
+          openModal('register');
+        }
+      });
+    })();
+  </script>
+
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-slate-900/95 backdrop-blur-xl z-[100] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col pt-20 px-6 overflow-y-auto pb-10">
+    <button aria-label="Close mobile navigation" id="mobile-menu-close" class="absolute top-4 right-4 text-white p-2 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+      <span class="material-symbols-outlined text-[18px]">close</span>
+    </button>
+    <div class="flex flex-col gap-6 text-center mt-4">
+      <a href="index.html" class="text-white text-xl font-bold tracking-wide">Home</a>
+      <a href="index.html#features" class="text-white text-xl font-bold tracking-wide">Features</a>
+      <a href="index.html#pricing" class="text-white text-xl font-bold tracking-wide">Pricing</a>
+      <a href="about.html" class="text-white text-xl font-bold tracking-wide">About Us</a>
+      <a href="contact.html" class="text-white text-xl font-bold tracking-wide">Contact Us</a>
+      <div class="mt-8 flex flex-col gap-4">
+        <button onclick="if(window.openAuthModal) window.openAuthModal('login'); document.getElementById('mobile-menu').classList.add('translate-x-full');" class="text-white py-3 border border-white/20 rounded-xl font-bold text-sm uppercase tracking-widest shadow-inner relative overflow-hidden bg-white/5">LOGIN</button>
+        <button onclick="if(window.openAuthModal) window.openAuthModal('register'); document.getElementById('mobile-menu').classList.add('translate-x-full');" class="bg-primary text-white py-3 rounded-xl font-bold text-sm uppercase tracking-widest shadow-[0_0_20px_rgba(124,58,237,0.4)]">GET STARTED</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('mobile-menu-btn');
+      const close = document.getElementById('mobile-menu-close');
+      const menu = document.getElementById('mobile-menu');
+      if(btn && menu) {
+        btn.addEventListener('click', () => menu.classList.remove('translate-x-full'));
+      }
+      if(close && menu) {
+        close.addEventListener('click', () => menu.classList.add('translate-x-full'));
+      }
+    });
+  </script>
+
+
+  <!-- ============================================== -->
+  <!-- 3. TOAST NOTIFICATIONS & FORM VALIDATION (UX)  -->
+  <!-- ============================================== -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-[200] flex flex-col gap-3 pointer-events-none"></div>
+
+  <script>
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'flex items-center gap-3 px-4 py-3 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.15)] backdrop-blur-xl border transform translate-y-10 opacity-0 transition-all duration-300 pointer-events-auto ' + 
+        (type === 'success' ? 'bg-emerald-900/90 border-emerald-500/30 text-emerald-50' : 'bg-red-900/90 border-red-500/30 text-red-50');
+      
+      const icon = type === 'success' ? 'check_circle' : 'error';
+      toast.innerHTML = '<span class="material-symbols-outlined text-[20px]">' + icon + '</span><p class="text-sm font-medium">' + message + '</p>';
+      
+      container.appendChild(toast);
+      
+      // Animate in
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          toast.classList.remove('translate-y-10', 'opacity-0');
+        });
+      });
+      
+      // Auto remove
+      setTimeout(() => {
+        toast.classList.add('translate-y-10', 'opacity-0');
+        setTimeout(() => toast.remove(), 300);
+      }, 4000);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          // Basic validation checking
+          const inputs = form.querySelectorAll('input[required], textarea[required]');
+          let valid = true;
+          inputs.forEach(input => {
+            if(!input.value.trim()) valid = false;
+          });
+          
+          if(valid) {
+            // Distinguish message
+            const btnText = form.querySelector('button[type="submit"]')?.innerText.toLowerCase() || '';
+            let msg = 'Action completed successfully!';
+            if(btnText.includes('subscribe') || btnText.includes('join')) msg = 'Successfully subscribed to insights!';
+            if(btnText.includes('login') || btnText.includes('sign in')) msg = 'Securely authenticated.';
+            if(btnText.includes('register') || btnText.includes('create')) msg = 'Account created successfully!';
+            
+            showToast(msg, 'success');
+            form.reset();
+
+            // Dismiss Auth Modal if open
+            const modal = document.getElementById('auth-modal');
+            const btndismiss = document.getElementById('auth-close');
+            if(modal && btndismiss && form.closest('#auth-panel')) {
+                setTimeout(() => btndismiss.click(), 600); // 600ms delay to read toast
+            }
+          } else {
+            showToast('Please complete all required fields.', 'error');
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- ============================================== -->
+  <!-- 4. SUBTLE SCROLL ANIMATIONS (INTERSECTION OBS) -->
+  <!-- ============================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Find eligible elements that aren't already heavily heavily animated or positioned weirdly
+      const targets = document.querySelectorAll('main > section:not(.relative) > div, header + main > section > div');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -50px 0px', threshold: 0.1 });
+
+      targets.forEach(el => {
+        // Only apply if it doesn't already have complex transforms assigned via Tailwind utilities
+        if(!el.className.includes('transform') && !el.className.includes('translate')) {
+           el.style.opacity = '0';
+           el.style.transform = 'translateY(20px)';
+           el.style.transition = 'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)';
+           observer.observe(el);
+        }
+      });
+    });
+  </script>
+
+
+    // Add auto-close to all standard anchor links inside the mobile menu
+    document.addEventListener('DOMContentLoaded', () => {
+       const mobileMenu = document.getElementById('mobile-menu');
+       if(mobileMenu) {
+         mobileMenu.querySelectorAll('a').forEach(anchor => {
+           anchor.addEventListener('click', () => {
+             // Delay very slightly to let the browser compute the scroll anchoring natively
+             setTimeout(() => {
+               mobileMenu.classList.add('translate-x-full');
+             }, 50);
+           });
+         });
+       }
+    });
+
+  </body>
+
+</html>

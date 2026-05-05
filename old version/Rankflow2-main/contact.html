@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contact Us - RankFlow</title>
+  <meta name="description"
+    content="Get in touch with RankFlow's technical support team. Enterprise SEO inquiries, API integrations, and high-priority support." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact RankFlow — Technical Support & Enterprise Sales" />
+  <meta property="og:description" content="Reach out to the RankFlow team for technical support, enterprise inquiries, or partnership opportunities. Average response time: 14 minutes." />
+  <meta property="og:url" content="https://rankflow.io/contact.html" />
+  <meta property="og:image" content="https://rankflow.io/assets/og-contact.png" />
+  <meta property="og:site_name" content="RankFlow" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@RankFlowHQ" />
+  <meta name="twitter:title" content="Contact RankFlow — Technical Support & Enterprise Sales" />
+  <meta name="twitter:description" content="Reach out to the RankFlow team for technical support, enterprise inquiries, or partnership opportunities. Average response time: 14 minutes." />
+  <meta name="twitter:image" content="https://rankflow.io/assets/og-contact.png" />
+  <!-- Canonical + Robots -->
+  <link rel="canonical" href="https://rankflow.io/contact.html" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#7C3AED" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          animation: {
+            'wave': 'wave 20s linear infinite',
+            'wave-slow': 'wave 35s linear infinite reverse',
+            'float': 'float 8s ease-in-out infinite',
+          },
+          keyframes: {
+            wave: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            }
+          },
+          colors: {
+            "primary": "#7C3AED", /* Vibrant Violet/Purple */
+            "primary-light": "#A78BFA", /* Soft Purple */
+            "accent": "#00E1D9", /* Bright Cyan for highlight/contrast */
+            "on-primary": "#ffffff",
+            "background": "#ffffff", /* White */
+            "on-background": "#0F172A", /* Slate 900 */
+            "surface": "#ffffff",
+            "on-surface": "#0F172A",
+            "surface-bright": "#ffffff",
+            "surface-container-low": "rgba(255, 255, 255, 0.6)",
+            "surface-container": "rgba(255, 255, 255, 0.7)",
+            "surface-container-high": "rgba(255, 255, 255, 0.8)",
+            "surface-container-highest": "rgba(255, 255, 255, 0.9)",
+            "outline": "#E2E8F0",
+            "outline-variant": "rgba(124, 58, 237, 0.15)", /* Soft purple tint */
+            "secondary": "#475569",  /* Slate 600 */
+            "on-secondary": "#ffffff",
+            "error": "#EF4444",
+            "on-error": "#ffffff",
+            "error-container": "#FEE2E2",
+            "on-error-container": "#991B1B",
+            "tertiary-container": "#F3E8FF",
+            "on-tertiary-container": "#6B21A8",
+            "primary-fixed-dim": "#8B5CF6",
+            "primary-container": "#F5F3FF",
+            "on-primary-container": "#4C1D95",
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            sm: "8px",
+            "container-max": "1280px",
+            gutter: "24px",
+            xl: "48px",
+            lg: "24px",
+            md: "16px",
+            unit: "4px",
+            xs: "4px"
+          },
+          fontFamily: {
+            "body-md": ["Inter"],
+            "display-lg": ["Inter"],
+            "title-sm": ["Inter"],
+            "headline-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "code-label": ["Inter"]
+          },
+          fontSize: {
+            "body-md": ["16px", { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" }],
+            "display-lg": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "title-sm": ["20px", { lineHeight: "1.4", letterSpacing: "0", fontWeight: "600" }],
+            "headline-md": ["30px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "body-sm": ["14px", { lineHeight: "1.5", letterSpacing: "0", fontWeight: "400" }],
+            "code-label": ["12px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* RF-GLOBAL-RESET */
+    html { margin: 0 !important; padding: 0 !important; }
+    body { margin: 0 !important; padding: 0 !important; }
+    footer { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* Hero character float animation */
+    @keyframes heroFloat {
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(-1deg);
+      }
+
+      50% {
+        transform: translateY(-18px) rotate(1deg);
+      }
+    }
+
+    .hero-character {
+      animation: heroFloat 5s ease-in-out infinite;
+      filter: drop-shadow(0 30px 40px rgba(124, 58, 237, 0.18));
+    }
+
+  </style>
+
+  <style id="mobile-fixes-v2">
+    @media (max-width: 767px) {
+      /* --- Auth Bottom Sheet Z-Index & Strict 85vh Height Fix --- */
+      #auth-modal, #auth-backdrop {
+        z-index: 999999 !important; /* Force entirely above everything including the livechat widget */
+      }
+      #auth-panel {
+        height: 87vh !important; /* Strictly lock to ~87% of screen height natively */
+        max-height: 87vh !important;
+        overflow-y: hidden !important; 
+      }
+      #auth-panel .overflow-y-auto {
+        min-height: 100% !important;
+        height: 100% !important;
+        overflow-y: hidden !important; /* Nuke the internal scrolling completely */
+      }
+
+      /* ===================================================
+         FIX 1: Remove trailing white space at page bottom
+         =================================================== */
+      main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+      body { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+      footer { margin-bottom: 0 !important; }
+      /* Remove empty spacing from last section children */
+      main > *:last-child { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+
+      /* ===================================================
+         FIX 2: About Us Mobile Hero Section — Full UI
+         =================================================== */
+
+      /* Hide the desktop two-column side-by-side hero layout */
+      .about-hero-desktop { display: none !important; }
+
+      /* Show the compact mobile hero card */
+      .about-hero-mobile {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 24px 16px 20px !important;
+        gap: 16px !important;
+      }
+
+      .about-hero-mobile .about-badge {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        background: rgba(124,58,237,0.1) !important;
+        border: 1px solid rgba(124,58,237,0.25) !important;
+        border-radius: 999px !important;
+        padding: 5px 14px !important;
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.15em !important;
+        color: #7C3AED !important;
+        text-transform: uppercase !important;
+      }
+
+      .about-hero-mobile h1 {
+        font-size: 1.65rem !important;
+        font-weight: 900 !important;
+        line-height: 1.15 !important;
+        color: #0F172A !important;
+        margin: 0 !important;
+      }
+
+      .about-hero-mobile h1 span.gradient-text {
+        background: linear-gradient(90deg, #7C3AED, #00E1D9) !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+      }
+
+      .about-hero-mobile p {
+        font-size: 12px !important;
+        color: #64748b !important;
+        line-height: 1.6 !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+      }
+
+      /* Mini stats row */
+      .about-hero-mobile .stats-row {
+        display: flex !important;
+        gap: 10px !important;
+        width: 100% !important;
+        justify-content: center !important;
+      }
+      .about-hero-mobile .stat-chip {
+        flex: 1 !important;
+        background: rgba(255,255,255,0.9) !important;
+        border: 1px solid rgba(124,58,237,0.15) !important;
+        border-radius: 14px !important;
+        padding: 10px 8px !important;
+        text-align: center !important;
+        box-shadow: 0 4px 16px rgba(124,58,237,0.08) !important;
+      }
+      .about-hero-mobile .stat-chip .stat-val {
+        font-size: 20px !important;
+        font-weight: 900 !important;
+        color: #7C3AED !important;
+        display: block !important;
+      }
+      .about-hero-mobile .stat-chip .stat-label {
+        font-size: 9px !important;
+        color: #64748b !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.08em !important;
+        display: block !important;
+        margin-top: 2px !important;
+      }
+
+      /* CTA Button row */
+      .about-hero-mobile .cta-row {
+        display: flex !important;
+        gap: 10px !important;
+        width: 100% !important;
+      }
+      .about-hero-mobile .cta-primary {
+        flex: 1 !important;
+        padding: 11px 0 !important;
+        background: linear-gradient(135deg, #7C3AED, #6D28D9) !important;
+        color: #fff !important;
+        border-radius: 12px !important;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        border: none !important;
+        cursor: pointer !important;
+        box-shadow: 0 6px 20px rgba(124,58,237,0.35) !important;
+      }
+      .about-hero-mobile .cta-secondary {
+        flex: 1 !important;
+        padding: 11px 0 !important;
+        background: transparent !important;
+        color: #7C3AED !important;
+        border-radius: 12px !important;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        border: 1.5px solid rgba(124,58,237,0.4) !important;
+        cursor: pointer !important;
+      }
+    }
+  </style>
+
+  <style>
+
+  /* ===================================================
+     DARK MODE SUPPORT
+     =================================================== */
+  html.dark body { background-color: #0f172a !important; color: #e2e8f0 !important; }
+  html.dark header { background: rgba(15,23,42,0.95) !important; border-color: rgba(255,255,255,0.08) !important; }
+  html.dark .bg-white\/90, html.dark .bg-white\/85, html.dark .bg-white, html.dark [class*='bg-white'] {
+    background: rgba(30,41,59,0.95) !important;
+  }
+  html.dark .text-on-surface, html.dark .text-on-background, html.dark .text-slate-900, html.dark h1, html.dark h2, html.dark h3 {
+    color: #e2e8f0 !important;
+  }
+  html.dark .text-secondary, html.dark .text-slate-600, html.dark .text-slate-500 { color: #94a3b8 !important; }
+  html.dark .border-slate-200, html.dark .border-outline-variant { border-color: rgba(255,255,255,0.1) !important; }
+  html.dark footer { background: #020617 !important; }
+  html.dark .bg-slate-900 { background: #020617 !important; }
+  html.dark .bg-background { background: #0f172a !important; }
+  html.dark .border-white\/80, html.dark .border-white\/10 { border-color: rgba(255,255,255,0.08) !important; }
+
+  /* Dark mode toggle button */
+  #theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(124,58,237,0.08);
+    border: 1px solid rgba(124,58,237,0.2);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    flex-shrink: 0;
+  }
+  #theme-toggle:hover { background: rgba(124,58,237,0.15); transform: scale(1.05); }
+  #theme-toggle .icon-sun, #theme-toggle .icon-moon { font-size: 18px; transition: opacity 0.2s; }
+  html:not(.dark) #theme-toggle .icon-moon { display: none; }
+  html.dark  #theme-toggle .icon-sun  { display: none; }
+
+</style>
+  <style>
+    html, body { margin: 0; padding: 0; box-sizing: border-box; }
+    footer { display: block; }
+  </style>
+  <style id="mobile-fixes">
+    @media (max-width: 767px) {
+      /* Force max 10px padding for structural classes */
+      .px-3, .px-4, .px-5, .px-6, .px-8, .px-10, .px-12, .px-16 { padding-left: 10px !important; padding-right: 10px !important; }
+      .py-3, .py-4, .py-5, .py-6, .py-8, .py-10, .py-12, .py-16, .py-20, .py-24, .py-32 { padding-top: 10px !important; padding-bottom: 10px !important; }
+      .p-3, .p-4, .p-5, .p-6, .p-8, .p-10, .p-12, .p-16 { padding: 10px !important; }
+      
+      /* Force tighter gaps */
+      .gap-3, .gap-4, .gap-5, .gap-6, .gap-8, .gap-10, .gap-12, .gap-16 { gap: 10px !important; }
+      
+      /* Flatten multiple column grids on mobile */
+      .grid-cols-2, .grid-cols-3, .grid-cols-4, .grid-cols-5, .grid-cols-6, .grid-cols-12 { grid-template-columns: 1fr !important; }
+      
+      /* Typography resizing for titles */
+      .text-3xl, .text-4xl, .text-5xl, .text-6xl, .text-7xl, .font-display-lg, .text-display-lg, .text-headline-md, .font-headline-md {
+        font-size: 1.5rem !important;
+        line-height: 1.25 !important;
+      }
+      .text-xl, .text-2xl {
+        font-size: 1.125rem !important;
+      }
+      
+      /* Width and container structural resets */
+      .w-\[400px\], .w-\[450px\], .w-\[500px\], .w-\[600px\], .w-\[800px\], 
+      .max-w-md, .max-w-lg, .max-w-xl, .max-w-2xl, .max-w-3xl, .max-w-4xl, .max-w-5xl, .max-w-7xl,
+      .col-span-12, .lg\:col-span-8, .lg\:col-span-4, .md\:col-span-2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+      }
+      
+      /* Footer and feature layout fixes */
+      footer .grid { 
+        grid-template-columns: 1fr !important; 
+        gap: 20px !important;
+      }
+      
+      /* Eliminate overflow from decorative background shapes */
+      .animate-wave, .animate-wave-slow, 
+      [class*="w-\[500px\]"], [class*="h-\[500px\]"],
+      [class*="w-\[600px\]"], [class*="h-\[600px\]"],
+      [class*="w-\[800px\]"], [class*="h-\[800px\]"] {
+        display: none !important;
+      }
+
+      /* Ensures no horizontal scrolling */
+      html, body {
+        overflow-x: hidden !important;
+        width: 100vw !important;
+      }
+      main, header, footer, section, div {
+        box-sizing: border-box !important;
+      }
+      
+            /* --- Footer Efficient View --- */
+      footer { padding: 15px 10px !important; max-height: none !important; }
+      footer .lg\:flex-row { 
+        flex-direction: column !important; 
+        gap: 15px !important; 
+        align-items: flex-start !important; 
+        border-bottom: none !important; 
+        margin-bottom: 5px !important; 
+        padding-bottom: 0 !important; 
+        display: flex !important;
+      }
+      footer .w-1\/2 { 
+        width: 100% !important; 
+        max-width: 100% !important; 
+        margin: 0 !important; 
+        gap: 10px !important; 
+      }
+      footer .grid { 
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important; 
+        gap: 10px !important; 
+        width: 100% !important;
+      }
+      footer ul { display: flex !important; flex-direction: column !important; gap: 4px !important; margin: 0 !important; }
+      footer li a { font-size: 10px !important; line-height: 1.2 !important; padding: 0 !important; }
+      footer p.text-slate-400, footer p.font-sans.max-w-sm, footer .pt-2 p { display: none !important; }
+      footer .text-2xl { font-size: 16px !important; }
+      footer form { max-width: 100% !important; }
+      footer input { padding: 6px 10px !important; font-size: 11px !important; }
+      footer button[type="submit"] { padding: 4px 8px !important; font-size: 10px !important; }
+      footer > div > div:last-child { flex-direction: row !important; justify-content: space-between !important; margin-top: 10 !important; }
+      footer > div > div:last-child p { font-size: 9px !important; }
+      footer .flex.items-center.gap-4 { gap: 8px !important; }
+      
+      
+      /* --- Testimonials JS Layout Fixes --- */
+      .rf-testi-track {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        gap: 16px !important;
+        width: max-content !important;
+        padding-bottom: 10px !important;
+        /* Allow JS to freely modify transform style without !important interfering */
+      }
+      .rf-testi-slide {
+        width: calc(100vw - 40px) !important;
+        min-width: calc(100vw - 40px) !important;
+        flex: 0 0 auto !important;
+      }
+      #testi-prev, #testi-next { display: none !important; }
+
+      
+
+      /* --- Auth Bottom Sheet (Modern Native Mobile) --- */
+      #auth-modal {
+        padding: 0 !important;
+      }
+      #auth-panel {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        border-radius: 32px 32px 0 0 !important; /* Standard modern bottom sheet rounding */
+        border-bottom: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        margin: 0 !important;
+        padding-bottom: env(safe-area-inset-bottom, 35px) !important;
+        padding-top: 15px !important; /* Breathing room for the drag pill */
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2) !important;
+      }
+      /* Modern iOS-style Drag Handle Pill */
+      #auth-panel::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 42px;
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 100px;
+        z-index: 100;
+      }
+      /* Hide the 'X' close button to force native swipe-down or tap-out behavior */
+      #auth-close {
+        display: none !important;
+      }
+      /* Restore generous, luxurious padding inside the modal that was globally squashed to 10px */
+      #auth-panel .px-6 { padding-left: 24px !important; padding-right: 24px !important; }
+      #auth-panel .pb-5 { padding-bottom: 20px !important; }
+      #auth-panel .pt-5 { padding-top: 24px !important; }
+      #auth-panel .p-6 { padding: 24px !important; }
+      #auth-panel form { padding-left: 24px !important; padding-right: 24px !important; padding-bottom: 24px !important; }
+      #auth-panel input { padding: 12px 16px !important; font-size: 14px !important; }
+      #auth-panel button[type="submit"] { padding: 14px !important; font-size: 14px !important; margin-top: 10px !important; }
+
+    }
+  </style>
+
+  <!-- ============================================== -->
+  <!-- 1. ANALYTICS & TRACKING PLACEHOLDERS           -->
+  <!-- ============================================== -->
+  <!-- Google Analytics / Tag Manager (Placeholder) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- Meta / Facebook Pixel (Placeholder) -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXXXXXX');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- ============================================== -->
+  <!-- 2. STRUCTURED DATA (SEO JSON-LD)               -->
+  <!-- ============================================== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RankFlow",
+      "operatingSystem": "Web Browser",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "29.00",
+        "priceCurrency": "USD"
+      },
+      "description": "Premium Next.js technical SEO audit layer and competitive performance intelligence."
+    }
+  </script>
+
+
+  <!-- Dark / Light Mode Toggle Script -->
+  <script>
+    (function() {
+      // Persist preference
+      const saved = localStorage.getItem('rf-theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        btn.addEventListener('click', () => {
+          const isDark = document.documentElement.classList.toggle('dark');
+          localStorage.setItem('rf-theme', isDark ? 'dark' : 'light');
+        });
+      });
+    })();
+  </script>
+</head>
+
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-bold">Skip to main content</a>
+
+  <!-- Animated Vector Background -->
+  <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z bg-background pointer-events-none">
+    <!-- Wavy Top -->
+    <div class="absolute top-0 left-0 w-[200%] flex opacity-15 animate-wave">
+      <svg viewBox="0 0 1440 320" class="w-[50%] h-auto fill-primary-light" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,133.3C672,139,768,181,864,197.3C960,213,1056,203,1152,181.3C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+      </svg>
+      <svg viewBox="0 0 1440 320" class="w-[50%] h-auto fill-primary-light" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,133.3C672,139,768,181,864,197.3C960,213,1056,203,1152,181.3C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+      </svg>
+    </div>
+    <!-- Wavy Top 2 (Slower, lighter) -->
+    <div class="absolute top-0 left-0 w-[200%] flex opacity-5 animate-wave-slow">
+      <svg viewBox="0 0 1440 320" class="w-[50%] h-auto fill-primary" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+      </svg>
+      <svg viewBox="0 0 1440 320" class="w-[50%] h-auto fill-primary" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+      </svg>
+    </div>
+    <!-- Floating Blobs inside the body -->
+    <div
+      class="absolute top-1/4 -right-20 w-[500px] h-[500px] bg-primary-light/10 rounded-full mix-blend-multiply filter blur-[80px] animate-float">
+    </div>
+    <div
+      class="absolute bottom-1/4 -left-20 w-[600px] h-[600px] bg-primary/10 rounded-full mix-blend-multiply filter blur-[100px] animate-float"
+      style="animation-delay: -2s;"></div>
+  </div>
+
+  <!-- TopNavBar -->
+  <header class="bg-white/90 backdrop-blur-xl border-b border-slate-200 top-0 sticky z-50 transition-colors">
+    <nav class="flex justify-between items-center w-full h-16 px-6 max-w-7xl mx-auto">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-xl font-black tracking-tighter text-slate-900">RankFlow</a>
+        <div class="hidden md:flex gap-4 items-center">
+          <a class="text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+            href="index.html">Home</a>
+          <a class="text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+            href="index.html#features">Features</a>
+          <a class="text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+            href="index.html#pricing">Pricing</a>
+          <a class="text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+            href="about.html">About Us</a>
+          <a class="text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+            href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <a class="hidden md:block text-slate-600 hover:text-blue-600 transition-colors font-sans text-sm font-medium"
+          href="#">Login</a>
+        <button
+          class="bg-primary text-white px-5 py-2.5 rounded text-sm font-bold active:scale-90 transition-transform duration-150">Run
+          Free Audit</button>
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden text-slate-800 bg-white/50 backdrop-blur-md border border-slate-200/50 p-2 rounded-lg flex items-center justify-center shadow-sm ml-4 z-50">
+          <span class="material-symbols-outlined text-[20px]">menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-8 lg:gap-12 pt-16 pb-24">
+    <!-- Hero Title -->
+    <section class="col-span-12 relative mb-6">
+      <div
+        class="inline-flex items-center px-4 py-1.5 bg-primary/10 text-primary rounded-full text-xs font-bold mb-4 border border-primary/20">
+        <span class="material-symbols-outlined text-[14px] mr-1.5">support_agent</span> COMMUNICATIONS GATEWAY
+      </div>
+      <h1 class="font-headline-md text-4xl md:text-5xl font-black text-on-surface mb-4">
+        <span class="md:hidden text-3xl whitespace-nowrap">Contact Tech Support</span>
+        <span class="hidden md:inline">Contact Technical Support</span>
+      </h1>
+      <p class="text-secondary font-body-md max-w-2xl text-lg">High-priority inquiry routing for enterprise SEO teams
+        and API consumers. Average response time: <span class="font-bold text-slate-800">14 minutes</span>.</p>
+    </section>
+    <!-- Section 1: Contact Form & Section 2: Direct Channels -->
+    <div class="col-span-12 lg:col-span-8 space-y-6">
+      <!-- Contact Form Card -->
+      <div
+        class="bg-white/80 backdrop-blur-2xl border border-white/80 shadow-[0_24px_50px_rgba(124,58,237,0.08)] p-8 md:p-10 rounded-3xl relative overflow-hidden group">
+        <!-- Floating glow behind form -->
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full filter blur-[60px] pointer-events-none group-hover:bg-primary/10 transition-colors">
+        </div>
+
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-5 relative z-10"
+          onsubmit="event.preventDefault(); alert('Message successfully dispatched to RankFlow Technical Support.');">
+          <div class="space-y-2">
+            <label class="font-code-label text-[11px] font-bold text-slate-500 uppercase tracking-wider">FULL
+              NAME</label>
+            <input
+              class="w-full bg-slate-50/50 backdrop-blur-sm border border-slate-200/60 px-4 py-3 text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-xl transition-all placeholder:text-slate-400"
+              placeholder="John Doe" type="text" required />
+          </div>
+          <div class="space-y-2">
+            <label class="font-code-label text-[11px] font-bold text-slate-500 uppercase tracking-wider">WORK
+              EMAIL</label>
+            <input
+              class="w-full bg-slate-50/50 backdrop-blur-sm border border-slate-200/60 px-4 py-3 text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-xl transition-all placeholder:text-slate-400"
+              placeholder="j.doe@company.com" type="email" required />
+          </div>
+          <div class="col-span-full space-y-2">
+            <label class="font-code-label text-[11px] font-bold text-slate-500 uppercase tracking-wider">INQUIRY
+              TYPE</label>
+            <select
+              class="w-full bg-slate-50/50 backdrop-blur-sm border border-slate-200/60 px-4 py-3 text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-xl appearance-none transition-all cursor-pointer">
+              <option>Technical API Integration</option>
+              <option>Enterprise Sales Inquiry</option>
+              <option>Billing & Subscription</option>
+              <option>Platform Bug Report</option>
+            </select>
+          </div>
+          <div class="col-span-full space-y-2">
+            <label class="font-code-label text-[11px] font-bold text-slate-500 uppercase tracking-wider">MESSAGE /
+              PAYLOAD PREVIEW</label>
+            <textarea
+              class="w-full bg-slate-50/50 backdrop-blur-sm border border-slate-200/60 px-4 py-3 text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-xl transition-all resize-none placeholder:text-slate-400"
+              placeholder="Briefly describe your request or drop a JSON payload here..." rows="5" required></textarea>
+          </div>
+          <div class="col-span-full pt-4 flex justify-end">
+            <button type="submit"
+              class="bg-slate-900 text-white font-bold text-xs uppercase tracking-wide px-8 py-4 rounded-xl hover:bg-primary transition-colors flex items-center gap-2 active:scale-95 shadow-lg">
+              TRANSMIT INQUIRY
+              <span class="material-symbols-outlined text-[16px]">send</span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- FAQ Preview -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+        <div
+          class="bg-white/60 backdrop-blur-md p-5 border border-white/80 rounded-2xl hover:border-primary/40 hover:bg-white/90 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(124,58,237,0.08)] transition-all cursor-pointer group hover:-translate-y-1">
+          <h4 class="font-bold text-sm text-slate-800 mb-2 flex items-center justify-between">
+            API rate limits?
+            <span
+              class="material-symbols-outlined text-primary/70 group-hover:text-primary text-[18px]">open_in_new</span>
+          </h4>
+          <p class="font-medium text-slate-500 text-xs leading-relaxed">Dynamic scaling available for Tier 3 and above.
+            Check limits in /v1/status.</p>
+        </div>
+        <div
+          class="bg-white/60 backdrop-blur-md p-5 border border-white/80 rounded-2xl hover:border-primary/40 hover:bg-white/90 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(124,58,237,0.08)] transition-all cursor-pointer group hover:-translate-y-1">
+          <h4 class="font-bold text-sm text-slate-800 mb-2 flex items-center justify-between">
+            Custom scrapers?
+            <span
+              class="material-symbols-outlined text-primary/70 group-hover:text-primary text-[18px]">open_in_new</span>
+          </h4>
+          <p class="font-medium text-slate-500 text-xs leading-relaxed">Request custom selector support via the
+            'Enterprise' contact option above.</p>
+        </div>
+        <div
+          class="bg-white/60 backdrop-blur-md p-5 border border-white/80 rounded-2xl hover:border-primary/40 hover:bg-white/90 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(124,58,237,0.08)] transition-all cursor-pointer group hover:-translate-y-1">
+          <h4 class="font-bold text-sm text-slate-800 mb-2 flex items-center justify-between">
+            Data latency?
+            <span
+              class="material-symbols-outlined text-primary/70 group-hover:text-primary text-[18px]">open_in_new</span>
+          </h4>
+          <p class="font-medium text-slate-500 text-xs leading-relaxed">Real-time indexing reflects within 120 seconds
+            across all global nodes.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Right Column: Channels & Global Presence -->
+    <aside class="col-span-12 lg:col-span-4 space-y-6">
+      <!-- Direct Channels -->
+      <div
+        class="bg-white/80 backdrop-blur-xl border border-white/80 shadow-[0_12px_40px_rgba(0,0,0,0.06)] rounded-3xl p-6">
+        <h3 class="font-code-label text-[11px] font-bold text-slate-500 mb-4 uppercase tracking-widest pl-2">Direct
+          Channels</h3>
+        <div class="space-y-1">
+          <div
+            class="flex items-start gap-4 p-4 hover:bg-slate-50 hover:border-slate-200 border border-transparent rounded-2xl transition-all cursor-pointer group">
+            <div class="bg-primary/10 text-primary p-2.5 rounded-xl group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">terminal</span>
+            </div>
+            <div>
+              <p class="font-bold text-sm text-slate-900">Technical Support</p>
+              <p class="text-[11px] text-slate-500 font-medium">support@rankflow.tech</p>
+            </div>
+          </div>
+          <div
+            class="flex items-start gap-4 p-4 hover:bg-slate-50 hover:border-slate-200 border border-transparent rounded-2xl transition-all cursor-pointer group">
+            <div class="bg-accent/10 text-accent p-2.5 rounded-xl group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">api</span>
+            </div>
+            <div>
+              <p class="font-bold text-sm text-slate-900">API Partnerships</p>
+              <p class="text-[11px] text-slate-500 font-medium">partners@rankflow.tech</p>
+            </div>
+          </div>
+          <div
+            class="flex items-start gap-4 p-4 hover:bg-slate-50 hover:border-slate-200 border border-transparent rounded-2xl transition-all cursor-pointer group">
+            <div class="bg-emerald-500/10 text-emerald-600 p-2.5 rounded-xl group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">payments</span>
+            </div>
+            <div>
+              <p class="font-bold text-sm text-slate-900">Sales & Growth</p>
+              <p class="text-[11px] text-slate-500 font-medium">growth@rankflow.tech</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Global Presence Map -->
+      <div
+        class="bg-white/80 backdrop-blur-xl border border-white/80 shadow-[0_12px_40px_rgba(0,0,0,0.06)] rounded-3xl overflow-hidden relative group">
+        <div class="h-44 relative bg-slate-50">
+          <img
+            class="w-full h-full object-cover mix-blend-luminosity opacity-40 group-hover:scale-105 transition-transform duration-700"
+            data-alt="A clean, minimalist high-tech world map."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2FCXj7zBpc6j30NyVjwqPPGbuf43bKnwD-Kgc0oBxCin3meXtswlBvIWkA2kXa7MyTUtaWpJ5oEuTHIeB8kq4-CVW6XUfE3bCWM7oHDrELbbG5cgZBoitmxp9NCw6N1rMjewCuI3hbIu4ie5OEPDkk0VPf8ZweLsfUcbt0poIImh3j4RrSulV11GbslmzAci_T03a2pCgjoBLSgwSN_m1KpmQnGbTEWp5J98nlXr3LeNoqK8PakpD9svA76HVpRNic9NO6A7K0KD1" />
+          <div class="absolute inset-0 bg-gradient-to-t from-white/95 via-white/50 to-transparent"></div>
+        </div>
+        <div class="p-6 pt-0 relative z-10">
+          <h3 class="font-code-label text-[11px] font-bold text-slate-500 mb-3 uppercase tracking-widest">Global Ingress
+            Nodes</h3>
+          <div class="grid grid-cols-2 gap-3 mb-5">
+            <div class="flex items-center gap-2">
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span class="text-[11px] font-bold text-slate-700 font-mono tracking-tight">US-EAST-1</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                  style="animation-delay: 0.5s"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span class="text-[11px] font-bold text-slate-700 font-mono tracking-tight">EU-WEST-2</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                  style="animation-delay: 0.2s"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span class="text-[11px] font-bold text-slate-700 font-mono tracking-tight">AP-SOUTH-1</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+              </span>
+              <span class="text-[11px] font-bold text-slate-700 font-mono tracking-tight">SA-EAST-1</span>
+            </div>
+          </div>
+          <div class="border-t border-slate-100 pt-4">
+            <p class="text-[11px] text-slate-500 font-medium leading-relaxed">
+              <span class="font-bold text-slate-800 block mb-1 uppercase tracking-wider">RankFlow HQ</span>
+              1200 Tech Plaza, Flight 42<br />San Francisco, CA 94105
+            </p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 border-t border-white/10 pt-10 pb-6 px-6 relative overflow-hidden">
+    <!-- Subtle background glows -->
+    <div
+      class="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full mix-blend-screen filter blur-[100px] pointer-events-none">
+    </div>
+    <div
+      class="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/5 rounded-full mix-blend-screen filter blur-[100px] pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div
+        class="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-6 border-b border-white/10 pb-8 mb-6">
+
+        <!-- Left: Brand & Newsletter -->
+        <div class="w-full lg:w-1/2 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl font-black tracking-tighter text-white">RankFlow</span>
+            <span
+              class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary/20 text-primary-light border border-primary/30">PRO</span>
+          </div>
+          <p class="font-sans text-sm text-slate-400 max-w-sm leading-relaxed">
+            Technical SEO analytics built for the modern web ecosystem. Fast, surgical, and reliable insights to boost
+            your rankings.
+          </p>
+
+          <!-- Compact Newsletter Subscription -->
+          <div class="pt-2">
+            <p class="text-xs font-bold text-slate-300 mb-2 uppercase tracking-wider">Stay ahead of algorithm updates
+            </p>
+            <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');"
+              class="flex items-center gap-2 max-w-sm relative">
+              <input type="email" placeholder="Enter your email" required
+                class="w-full bg-white/5 border border-white/10 text-white text-sm rounded-lg px-4 py-2.5 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors placeholder:text-white" />
+              <button type="submit"
+                class="absolute right-1 top-1 bottom-1 bg-primary hover:bg-primary-light text-white px-4 rounded-md text-xs font-bold transition-colors flex items-center gap-1">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right: Links Grid (Compact) -->
+        <div class="w-full lg:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">
+          <div class="space-y-3">
+            <p class="text-[11px] font-code-label text-slate-500 uppercase tracking-widest font-bold">Product</p>
+            <ul class="space-y-2">
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="index.html#features">Features</a>
+              </li>
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="index.html#pricing">Pricing</a>
+              </li>
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="#">Integrations</a></li>
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="#">Changelog</a></li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="text-[11px] font-code-label text-slate-500 uppercase tracking-widest font-bold">Resources</p>
+            <ul class="space-y-2">
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="#">Documentation</a></li>
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="#">API Reference</a></li>
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="#">Community</a></li>
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="text-[11px] font-code-label text-slate-500 uppercase tracking-widest font-bold">Legal</p>
+            <ul class="space-y-2">
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="#">Terms of Service</a></li>
+              <li><a class="text-slate-400 hover:text-white transition-colors" href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <p>© 2026 RankFlow Inc. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-white transition-colors" aria-label="Twitter">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
+          </a>
+          <a href="#" class="hover:text-white transition-colors" aria-label="GitHub">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="#" class="hover:text-white transition-colors" aria-label="LinkedIn">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-slate-900/95 backdrop-blur-xl z-[100] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col pt-20 px-6 overflow-y-auto pb-10">
+    <button aria-label="Close mobile navigation" id="mobile-menu-close" class="absolute top-4 right-4 text-white p-2 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+      <span class="material-symbols-outlined text-[18px]">close</span>
+    </button>
+    <div class="flex flex-col gap-6 text-center mt-4">
+      <a href="index.html" class="text-white text-xl font-bold tracking-wide">Home</a>
+      <a href="index.html#features" class="text-white text-xl font-bold tracking-wide">Features</a>
+      <a href="index.html#pricing" class="text-white text-xl font-bold tracking-wide">Pricing</a>
+      <a href="about.html" class="text-white text-xl font-bold tracking-wide">About Us</a>
+      <a href="contact.html" class="text-white text-xl font-bold tracking-wide">Contact Us</a>
+      <div class="mt-8 flex flex-col gap-4">
+        <button onclick="if(window.openAuthModal) window.openAuthModal('login'); document.getElementById('mobile-menu').classList.add('translate-x-full');" class="text-white py-3 border border-white/20 rounded-xl font-bold text-sm uppercase tracking-widest shadow-inner relative overflow-hidden bg-white/5">LOGIN</button>
+        <button onclick="if(window.openAuthModal) window.openAuthModal('register'); document.getElementById('mobile-menu').classList.add('translate-x-full');" class="bg-primary text-white py-3 rounded-xl font-bold text-sm uppercase tracking-widest shadow-[0_0_20px_rgba(124,58,237,0.4)]">GET STARTED</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('mobile-menu-btn');
+      const close = document.getElementById('mobile-menu-close');
+      const menu = document.getElementById('mobile-menu');
+      if(btn && menu) {
+        btn.addEventListener('click', () => menu.classList.remove('translate-x-full'));
+      }
+      if(close && menu) {
+        close.addEventListener('click', () => menu.classList.add('translate-x-full'));
+      }
+    });
+  </script>
+
+
+  <!-- ============================================== -->
+  <!-- 3. TOAST NOTIFICATIONS & FORM VALIDATION (UX)  -->
+  <!-- ============================================== -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-[200] flex flex-col gap-3 pointer-events-none"></div>
+
+  <script>
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'flex items-center gap-3 px-4 py-3 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.15)] backdrop-blur-xl border transform translate-y-10 opacity-0 transition-all duration-300 pointer-events-auto ' + 
+        (type === 'success' ? 'bg-emerald-900/90 border-emerald-500/30 text-emerald-50' : 'bg-red-900/90 border-red-500/30 text-red-50');
+      
+      const icon = type === 'success' ? 'check_circle' : 'error';
+      toast.innerHTML = '<span class="material-symbols-outlined text-[20px]">' + icon + '</span><p class="text-sm font-medium">' + message + '</p>';
+      
+      container.appendChild(toast);
+      
+      // Animate in
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          toast.classList.remove('translate-y-10', 'opacity-0');
+        });
+      });
+      
+      // Auto remove
+      setTimeout(() => {
+        toast.classList.add('translate-y-10', 'opacity-0');
+        setTimeout(() => toast.remove(), 300);
+      }, 4000);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          // Basic validation checking
+          const inputs = form.querySelectorAll('input[required], textarea[required]');
+          let valid = true;
+          inputs.forEach(input => {
+            if(!input.value.trim()) valid = false;
+          });
+          
+          if(valid) {
+            // Distinguish message
+            const btnText = form.querySelector('button[type="submit"]')?.innerText.toLowerCase() || '';
+            let msg = 'Action completed successfully!';
+            if(btnText.includes('subscribe') || btnText.includes('join')) msg = 'Successfully subscribed to insights!';
+            if(btnText.includes('login') || btnText.includes('sign in')) msg = 'Securely authenticated.';
+            if(btnText.includes('register') || btnText.includes('create')) msg = 'Account created successfully!';
+            
+            showToast(msg, 'success');
+            form.reset();
+
+            // Dismiss Auth Modal if open
+            const modal = document.getElementById('auth-modal');
+            const btndismiss = document.getElementById('auth-close');
+            if(modal && btndismiss && form.closest('#auth-panel')) {
+                setTimeout(() => btndismiss.click(), 600); // 600ms delay to read toast
+            }
+          } else {
+            showToast('Please complete all required fields.', 'error');
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- ============================================== -->
+  <!-- 4. SUBTLE SCROLL ANIMATIONS (INTERSECTION OBS) -->
+  <!-- ============================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Find eligible elements that aren't already heavily heavily animated or positioned weirdly
+      const targets = document.querySelectorAll('main > section:not(.relative) > div, header + main > section > div');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -50px 0px', threshold: 0.1 });
+
+      targets.forEach(el => {
+        // Only apply if it doesn't already have complex transforms assigned via Tailwind utilities
+        if(!el.className.includes('transform') && !el.className.includes('translate')) {
+           el.style.opacity = '0';
+           el.style.transform = 'translateY(20px)';
+           el.style.transition = 'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)';
+           observer.observe(el);
+        }
+      });
+    });
+  </script>
+
+
+    // Add auto-close to all standard anchor links inside the mobile menu
+    document.addEventListener('DOMContentLoaded', () => {
+       const mobileMenu = document.getElementById('mobile-menu');
+       if(mobileMenu) {
+         mobileMenu.querySelectorAll('a').forEach(anchor => {
+           anchor.addEventListener('click', () => {
+             // Delay very slightly to let the browser compute the scroll anchoring natively
+             setTimeout(() => {
+               mobileMenu.classList.add('translate-x-full');
+             }, 50);
+           });
+         });
+       }
+    });
+
+  </body>
+
+</html>
