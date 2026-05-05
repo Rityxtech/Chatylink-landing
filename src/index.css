@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --surface-bright: #39393b;
+  --on-secondary: #480081;
+  --on-secondary-fixed: #2c0051;
+  --inverse-primary: #006970;
+  --primary-fixed-dim: #00dbe9;
+  --on-primary-fixed: #002022;
+  --secondary-fixed: #efdbff;
+  --on-tertiary: #2f3131;
+  --tertiary-fixed-dim: #c6c6c7;
+  --primary: #dbfcff;
+  --surface-container: #201f22;
+  --tertiary-fixed: #e2e2e2;
+  --on-surface: #e5e1e4;
+  --surface-container-low: #1c1b1d;
+  --on-primary-container: #006970;
+  --on-error-container: #ffdad6;
+  --on-background: #e5e1e4;
+  --on-tertiary-fixed-variant: #454747;
+  --on-primary-fixed-variant: #004f54;
+  --outline: #849495;
+  --background: #131315;
+  --inverse-surface: #e5e1e4;
+  --error: #ffb4ab;
+  --surface: #131315;
+  --outline-variant: #3b494b;
+  --on-secondary-fixed-variant: #6700b5;
+  --on-error: #690005;
+  --secondary-fixed-dim: #dcb8ff;
+  --primary-container: #00f0ff;
+  --surface-variant: #353437;
+  --secondary-container: #7701d0;
+  --on-primary: #00363a;
+  --surface-container-high: #2a2a2c;
+  --inverse-on-surface: #313032;
+  --error-container: #93000a;
+  --surface-tint: #00dbe9;
+  --surface-dim: #131315;
+  --tertiary-container: #d9d9d9;
+  --on-secondary-container: #dcb7ff;
+  --on-tertiary-container: #5d5f5f;
+  --tertiary: #f5f5f5;
+  --primary-fixed: #7df4ff;
+  --surface-container-lowest: #0e0e10;
+  --secondary: #dcb8ff;
+  --on-tertiary-fixed: #1a1c1c;
+  --on-surface-variant: #b9cacb;
+  --surface-container-highest: #353437;
+
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --text-gradient-end: #00f0ff;
+}
+
+.light {
+  --surface-bright: #e0e0e0;
+  --on-secondary: #ffffff;
+  --on-secondary-fixed: #2c0051;
+  --inverse-primary: #00dbe9;
+  --primary-fixed-dim: #006970;
+  --on-primary-fixed: #002022;
+  --secondary-fixed: #efdbff;
+  --on-tertiary: #ffffff;
+  --tertiary-fixed-dim: #454747;
+  --primary: #006970;
+  --surface-container: #f5f5f7;
+  --tertiary-fixed: #1a1c1c;
+  --on-surface: #131315;
+  --surface-container-low: #f9f9f9;
+  --on-primary-container: #ffffff;
+  --on-error-container: #410002;
+  --on-background: #131315;
+  --on-tertiary-fixed-variant: #454747;
+  --on-primary-fixed-variant: #004f54;
+  --outline: #707979;
+  --background: #ffffff;
+  --inverse-surface: #313032;
+  --error: #ba1a1a;
+  --surface: #ffffff;
+  --outline-variant: #bfc8c8;
+  --on-secondary-fixed-variant: #6700b5;
+  --on-error: #ffffff;
+  --secondary-fixed-dim: #dcb8ff;
+  --primary-container: #006970;
+  --surface-variant: #ebf2f2;
+  --secondary-container: #6700b5;
+  --on-primary: #ffffff;
+  --surface-container-high: #ebebeb;
+  --inverse-on-surface: #f4f0f2;
+  --error-container: #ffdad6;
+  --surface-tint: #006970;
+  --surface-dim: #dbd9dc;
+  --tertiary-container: #ffffff;
+  --on-secondary-container: #ffffff;
+  --on-tertiary-container: #1a1c1c;
+  --tertiary: #5d5f5f;
+  --primary-fixed: #a5eeff;
+  --surface-container-lowest: #ffffff;
+  --secondary: #6700b5;
+  --on-tertiary-fixed: #ffffff;
+  --on-surface-variant: #3f4848;
+  --surface-container-highest: #e0e0e0;
+
+  --glass-bg: rgba(0, 0, 0, 0.03);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --text-gradient-end: #006970;
+}
+
+@theme {
+  --color-surface-bright: var(--surface-bright);
+  --color-on-secondary: var(--on-secondary);
+  --color-on-secondary-fixed: var(--on-secondary-fixed);
+  --color-inverse-primary: var(--inverse-primary);
+  --color-primary-fixed-dim: var(--primary-fixed-dim);
+  --color-on-primary-fixed: var(--on-primary-fixed);
+  --color-secondary-fixed: var(--secondary-fixed);
+  --color-on-tertiary: var(--on-tertiary);
+  --color-tertiary-fixed-dim: var(--tertiary-fixed-dim);
+  --color-primary: var(--primary);
+  --color-surface-container: var(--surface-container);
+  --color-tertiary-fixed: var(--tertiary-fixed);
+  --color-on-surface: var(--on-surface);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-on-primary-container: var(--on-primary-container);
+  --color-on-error-container: var(--on-error-container);
+  --color-on-background: var(--on-background);
+  --color-on-tertiary-fixed-variant: var(--on-tertiary-fixed-variant);
+  --color-on-primary-fixed-variant: var(--on-primary-fixed-variant);
+  --color-outline: var(--outline);
+  --color-background: var(--background);
+  --color-inverse-surface: var(--inverse-surface);
+  --color-error: var(--error);
+  --color-surface: var(--surface);
+  --color-outline-variant: var(--outline-variant);
+  --color-on-secondary-fixed-variant: var(--on-secondary-fixed-variant);
+  --color-on-error: var(--on-error);
+  --color-secondary-fixed-dim: var(--secondary-fixed-dim);
+  --color-primary-container: var(--primary-container);
+  --color-surface-variant: var(--surface-variant);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-primary: var(--on-primary);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-inverse-on-surface: var(--inverse-on-surface);
+  --color-error-container: var(--error-container);
+  --color-surface-tint: var(--surface-tint);
+  --color-surface-dim: var(--surface-dim);
+  --color-tertiary-container: var(--tertiary-container);
+  --color-on-secondary-container: var(--on-secondary-container);
+  --color-on-tertiary-container: var(--on-tertiary-container);
+  --color-tertiary: var(--tertiary);
+  --color-primary-fixed: var(--primary-fixed);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-secondary: var(--secondary);
+  --color-on-tertiary-fixed: var(--on-tertiary-fixed);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-surface-container-highest: var(--surface-container-highest);
+
+  --font-code: "JetBrains Mono", monospace;
+  --font-h2: "Space Grotesk", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-h3: "Space Grotesk", sans-serif;
+  --font-h1: "Space Grotesk", sans-serif;
+  --font-label-caps: "Space Grotesk", sans-serif;
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+}
+
+
+@utility font-h1 { font-family: var(--font-h1); font-size: clamp(32px, 5vw, 48px); line-height: 1.1; letter-spacing: -0.04em; font-weight: 700; }
+@utility font-h2 { font-family: var(--font-h2); font-size: clamp(24px, 4vw, 32px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 600; }
+@utility font-h3 { font-family: var(--font-h3); font-size: clamp(18px, 3vw, 24px); line-height: 1.2; letter-spacing: -0.02em; font-weight: 600; }
+@utility font-body-lg { font-family: var(--font-body-lg); font-size: clamp(16px, 2vw, 18px); line-height: 1.5; letter-spacing: -0.01em; font-weight: 400; }
+@utility font-body-md { font-family: var(--font-body-md); font-size: 16px; line-height: 1.5; letter-spacing: -0.01em; font-weight: 400; }
+@utility font-body-sm { font-family: var(--font-body-sm); font-size: 14px; line-height: 1.4; letter-spacing: 0em; font-weight: 400; }
+@utility font-code { font-family: var(--font-code); font-size: 13px; line-height: 1.6; letter-spacing: 0em; font-weight: 500; }
+@utility font-label-caps { font-family: var(--font-label-caps); font-size: 12px; line-height: 1; letter-spacing: 0.05em; font-weight: 700; }
+
+@utility glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+@utility glow-cyan {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
+    border-color: rgba(0, 240, 255, 0.4);
+  }
+}
+
+@utility text-gradient {
+  background: linear-gradient(to right, currentColor, var(--text-gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@utility animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@utility marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 2rem;
+}
+
+@utility marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 2rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-surface);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-variant);
+  border-radius: 5px;
+  border: 2px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-container);
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Base tailwind elements */
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  html.light {
+    color-scheme: light;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Remix3: RankFlow | Elite SEO Intelligence",
+  "description": "RankFlow is a premium SEO intelligence platform designed for high-performance SaaS teams. Built for technical SEO audits, real-time keyword tracking, and AI-powered content optimization.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": []
+}
