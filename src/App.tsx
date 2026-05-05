@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { ReactLenis } from 'lenis/react';
 import { ThemeProvider } from './lib/ThemeContext';
 import Home from './pages/Home';
@@ -59,21 +59,21 @@ function AppContent() {
       <div className="font-body-md text-on-surface bg-background antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-fixed" style={{ position: 'relative' }}>
         <AnimatedBackground />
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', flex: 1 }}>
-        {!hideLayout && <TopNavBar />}
-        <div className="flex-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/developers" element={<Developers />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/get-started" element={<GetStarted />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/forgot-password" element={<ForgotPassword />} />
-          </Routes>
-        </div>
-        {!hideLayout && <Footer />}
-        {!hideLayout && <ChatWidget />}
+          {!hideLayout && <TopNavBar />}
+          <div className="flex-1">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/developers" element={<Developers />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/get-started" element={<GetStarted />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/forgot-password" element={<ForgotPassword />} />
+            </Routes>
+          </div>
+          {!hideLayout && <Footer />}
+          {!hideLayout && <ChatWidget />}
         </div>
       </div>
     </ReactLenis>
@@ -83,9 +83,9 @@ function AppContent() {
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <HashRouter>
         <AppContent />
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
