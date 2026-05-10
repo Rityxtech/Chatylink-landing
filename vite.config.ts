@@ -8,6 +8,8 @@ export default defineConfig(({ mode }) => {
   // Set VITE_BASE_URL in your environment or hardcode your exact GitHub repo name (case-sensitive)
   // For root deployment (username.github.io), use '/'
   // For project pages (username.github.io/RepoName), use '/RepoName/'
+  // CRITICAL: This must exactly match your GitHub repo name (case-sensitive) as it appears in the URL
+  // URL: https://rityxtech.github.io/Rankflow/ → base = '/Rankflow/'
   const base = process.env.VITE_BASE_URL ?? '/Rankflow/';
   return {
     plugins: [react(), tailwindcss()],

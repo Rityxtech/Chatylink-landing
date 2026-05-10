@@ -13,6 +13,8 @@ import TopNavBar from './components/TopNavBar';
 import Footer from './components/Footer';
 import ChatWidget from './components/ChatWidget';
 import ForgotPassword from './pages/ForgotPassword';
+import AiRadar from './pages/AiRadar';
+
 
 function AnimatedBackground() {
   return (
@@ -70,6 +72,7 @@ function AppContent() {
               <Route path="/get-started" element={<GetStarted />} />
               <Route path="/login" element={<Login />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
+              <Route path="/ai-radar" element={<AiRadar />} />
             </Routes>
           </div>
           {!hideLayout && <Footer />}

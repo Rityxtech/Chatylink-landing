@@ -19,22 +19,23 @@ export default function TopNavBar() {
             <Link className={`transition-colors ${location.pathname === '/developers' ? 'text-surface-tint border-b-2 border-surface-tint pb-1' : 'text-on-surface-variant hover:text-on-surface'}`} to="/developers">Developers</Link>
             <Link className={`transition-colors ${location.pathname === '/about' ? 'text-surface-tint border-b-2 border-surface-tint pb-1' : 'text-on-surface-variant hover:text-on-surface'}`} to="/about">About</Link>
             <Link className={`transition-colors ${location.pathname === '/contact' ? 'text-surface-tint border-b-2 border-surface-tint pb-1' : 'text-on-surface-variant hover:text-on-surface'}`} to="/contact">Contact</Link>
+            <Link className={`transition-colors ${location.pathname === '/ai-radar' ? 'text-surface-tint border-b-2 border-surface-tint pb-1' : 'text-on-surface-variant hover:text-on-surface'}`} to="/ai-radar">AI Radar</Link>
           </div>
         </div>
         <div className="hidden lg:flex items-center gap-4">
-          <button 
+          <button
             onClick={toggleTheme}
             className="p-2 text-on-surface-variant hover:text-on-surface transition-colors rounded-full hover:bg-surface-variant/50 cursor-pointer mr-2"
             title="Toggle theme"
           >
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-           <Link to="/login" className="px-5 py-2 text-on-surface-variant hover:text-on-surface transition-colors font-medium cursor-pointer">Login</Link>
+          <Link to="/login" className="px-5 py-2 text-on-surface-variant hover:text-on-surface transition-colors font-medium cursor-pointer">Login</Link>
           <Link to="/get-started" className="px-5 py-2 bg-primary-container text-on-primary font-bold rounded hover:shadow-[0_0_15px_rgba(0,240,255,0.4)] transition-all active:scale-95 cursor-pointer text-sm block">Get Started</Link>
         </div>
-        
+
         <div className="flex lg:hidden items-center gap-4">
-          <button 
+          <button
             onClick={toggleTheme}
             className="p-2 text-on-surface-variant hover:text-on-surface transition-colors rounded-full cursor-pointer"
           >
@@ -55,6 +56,7 @@ export default function TopNavBar() {
             <Link onClick={() => setMobileMenuOpen(false)} className={`transition-colors ${location.pathname === '/developers' ? 'text-surface-tint' : 'text-on-surface-variant'}`} to="/developers">Developers</Link>
             <Link onClick={() => setMobileMenuOpen(false)} className={`transition-colors ${location.pathname === '/about' ? 'text-surface-tint' : 'text-on-surface-variant'}`} to="/about">About</Link>
             <Link onClick={() => setMobileMenuOpen(false)} className={`transition-colors ${location.pathname === '/contact' ? 'text-surface-tint' : 'text-on-surface-variant'}`} to="/contact">Contact</Link>
+            <Link onClick={() => setMobileMenuOpen(false)} className={`transition-colors ${location.pathname === '/ai-radar' ? 'text-surface-tint' : 'text-on-surface-variant'}`} to="/ai-radar">AI Radar</Link>
           </nav>
           <div className="flex flex-col gap-2">
             <Link onClick={() => setMobileMenuOpen(false)} to="/login" className="w-full text-center px-5 py-3 border border-outline-variant/30 text-on-surface rounded font-medium cursor-pointer">Login</Link>
