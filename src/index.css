@@ -1,71 +1,324 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  background: var(--background);
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+@keyframes cloudDriftRight {
+    0% { transform: translateX(-30vw); }
+    100% { transform: translateX(130vw); }
+}
+
+@keyframes cloudDriftLeft {
+    0% { transform: translateX(130vw); }
+    100% { transform: translateX(-30vw); }
+}
+
+@property --gradient-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rainbow-rotate {
+    to { --gradient-angle: 360deg; }
+}
+
+.rainbow-border {
+    background: conic-gradient(from var(--gradient-angle), #ef4444, #f59e0b, #22c55e, #3b82f6, #8b5cf6, #ef4444);
+    animation: rainbow-rotate 3s linear infinite;
+}
+
+/* === Section Spacing: Mobile and Desktop are fully independent === */
+
+.section-connects {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section-solution {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.section-challenge {
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+.section-pricing {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section-hero {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .section-connects {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .section-solution {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .section-challenge {
+        padding-top: calc(4rem + 25px);
+        padding-bottom: 4rem;
+    }
+    .section-pricing {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .section-hero {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+}
+
+.chat-widget-panel {
+    width: 100vw;
+}
+
+@media (min-width: 768px) {
+    .chat-widget-panel {
+        width: 400px;
+    }
+}
+
+.mobile-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: var(--background);
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.mobile-content-bg {
+    background-color: var(--background);
+}
+
+@media (min-width: 768px) {
+    .mobile-content-bg {
+        background-color: transparent;
+    }
+}
+
+.mobile-background span {
+    position: absolute;
+    height: 12vmin;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.25;
+    animation: cloudDriftRight linear infinite;
+}
+
+.mobile-background span:nth-child(1) {
+    width: 55vmin; top: 5%; left: 10%;
+    background: radial-gradient(ellipse at 30% 50%, #3b82f6, #2a2a2e 70%),
+                radial-gradient(ellipse at 65% 40%, #60a5fa, #2a2a2e 65%),
+                radial-gradient(ellipse at 90% 55%, #93c5fd, #2a2a2e 60%);
+    animation-name: cloudDriftRight; animation-duration: 60s; animation-delay: -5s;
+}
+.mobile-background span:nth-child(2) {
+    width: 45vmin; top: 15%; left: 50%;
+    background: radial-gradient(ellipse at 40% 50%, #60a5fa, #2a2a2e 70%),
+                radial-gradient(ellipse at 75% 45%, #93c5fd, #2a2a2e 65%);
+    animation-name: cloudDriftLeft; animation-duration: 80s; animation-delay: -30s;
+}
+.mobile-background span:nth-child(3) {
+    width: 60vmin; top: 28%; left: 30%;
+    background: radial-gradient(ellipse at 25% 50%, #3b82f6, #2a2a2e 70%),
+                radial-gradient(ellipse at 55% 40%, #60a5fa, #2a2a2e 65%),
+                radial-gradient(ellipse at 85% 55%, #93c5fd, #2a2a2e 60%);
+    animation-name: cloudDriftRight; animation-duration: 70s; animation-delay: -15s;
+}
+.mobile-background span:nth-child(4) {
+    width: 40vmin; top: 40%; left: 70%;
+    background: radial-gradient(ellipse at 50% 50%, #60a5fa, #2a2a2e 70%),
+                radial-gradient(ellipse at 80% 45%, #93c5fd, #2a2a2e 65%);
+    animation-name: cloudDriftLeft; animation-duration: 90s; animation-delay: -50s;
+}
+.mobile-background span:nth-child(5) {
+    width: 50vmin; top: 52%; left: 5%;
+    background: radial-gradient(ellipse at 35% 50%, #3b82f6, #2a2a2e 70%),
+                radial-gradient(ellipse at 70% 45%, #60a5fa, #2a2a2e 65%);
+    animation-name: cloudDriftRight; animation-duration: 65s; animation-delay: -20s;
+}
+.mobile-background span:nth-child(6) {
+    width: 65vmin; top: 65%; left: 40%;
+    background: radial-gradient(ellipse at 20% 50%, #3b82f6, #2a2a2e 70%),
+                radial-gradient(ellipse at 50% 40%, #60a5fa, #2a2a2e 65%),
+                radial-gradient(ellipse at 80% 55%, #93c5fd, #2a2a2e 60%);
+    animation-name: cloudDriftLeft; animation-duration: 85s; animation-delay: -40s;
+}
+.mobile-background span:nth-child(7) {
+    width: 42vmin; top: 78%; left: 60%;
+    background: radial-gradient(ellipse at 45% 50%, #60a5fa, #2a2a2e 70%),
+                radial-gradient(ellipse at 75% 45%, #93c5fd, #2a2a2e 65%);
+    animation-name: cloudDriftRight; animation-duration: 75s; animation-delay: -10s;
+}
+.mobile-background span:nth-child(8) {
+    width: 55vmin; top: 88%; left: 20%;
+    background: radial-gradient(ellipse at 30% 50%, #3b82f6, #2a2a2e 70%),
+                radial-gradient(ellipse at 65% 40%, #60a5fa, #2a2a2e 65%),
+                radial-gradient(ellipse at 90% 55%, #93c5fd, #2a2a2e 60%);
+    animation-name: cloudDriftLeft; animation-duration: 95s; animation-delay: -55s;
+}
+.mobile-background span:nth-child(9) {
+    width: 48vmin; top: 8%; left: 65%;
+    background: radial-gradient(ellipse at 40% 50%, #93c5fd, #2a2a2e 70%),
+                radial-gradient(ellipse at 75% 45%, #60a5fa, #2a2a2e 65%);
+    animation-name: cloudDriftRight; animation-duration: 100s; animation-delay: -70s;
+}
+.mobile-background span:nth-child(10) {
+    width: 58vmin; top: 35%; left: 15%;
+    background: radial-gradient(ellipse at 25% 50%, #60a5fa, #2a2a2e 70%),
+                radial-gradient(ellipse at 55% 40%, #93c5fd, #2a2a2e 65%),
+                radial-gradient(ellipse at 85% 55%, #3b82f6, #2a2a2e 60%);
+    animation-name: cloudDriftLeft; animation-duration: 110s; animation-delay: -80s;
+}
+.mobile-background span:nth-child(11) {
+    width: 44vmin; top: 48%; left: 55%;
+    background: radial-gradient(ellipse at 50% 50%, #60a5fa, #2a2a2e 70%),
+                radial-gradient(ellipse at 80% 45%, #93c5fd, #2a2a2e 65%);
+    animation-name: cloudDriftRight; animation-duration: 72s; animation-delay: -25s;
+}
+.mobile-background span:nth-child(12) {
+    width: 52vmin; top: 72%; left: 25%;
+    background: radial-gradient(ellipse at 30% 50%, #3b82f6, #2a2a2e 70%),
+                radial-gradient(ellipse at 65% 40%, #93c5fd, #2a2a2e 65%);
+    animation-name: cloudDriftLeft; animation-duration: 88s; animation-delay: -45s;
+}
+.mobile-background span:nth-child(13) {
+    width: 38vmin; top: 22%; left: 75%;
+    background: radial-gradient(ellipse at 50% 50%, #93c5fd, #2a2a2e 70%);
+    animation-name: cloudDriftRight; animation-duration: 120s; animation-delay: -90s;
+}
+.mobile-background span:nth-child(14) {
+    width: 50vmin; top: 58%; left: 45%;
+    background: radial-gradient(ellipse at 35% 50%, #60a5fa, #2a2a2e 70%),
+                radial-gradient(ellipse at 70% 45%, #3b82f6, #2a2a2e 65%);
+    animation-name: cloudDriftLeft; animation-duration: 78s; animation-delay: -35s;
+}
+.mobile-background span:nth-child(15) {
+    width: 46vmin; top: 85%; left: 35%;
+    background: radial-gradient(ellipse at 40% 50%, #93c5fd, #2a2a2e 70%),
+                radial-gradient(ellipse at 75% 45%, #60a5fa, #2a2a2e 65%);
+    animation-name: cloudDriftRight; animation-duration: 105s; animation-delay: -60s;
+}
+.mobile-background span:nth-child(16) {
+    width: 62vmin; top: 12%; left: 50%;
+    background: radial-gradient(ellipse at 20% 50%, #3b82f6, #2a2a2e 70%),
+                radial-gradient(ellipse at 50% 40%, #60a5fa, #2a2a2e 65%),
+                radial-gradient(ellipse at 80% 55%, #93c5fd, #2a2a2e 60%);
+    animation-name: cloudDriftLeft; animation-duration: 130s; animation-delay: -100s;
+}
+.mobile-background span:nth-child(17) {
+    width: 42vmin; top: 45%; left: 80%;
+    background: radial-gradient(ellipse at 50% 50%, #60a5fa, #2a2a2e 70%);
+    animation-name: cloudDriftRight; animation-duration: 95s; animation-delay: -65s;
+}
+.mobile-background span:nth-child(18) {
+    width: 54vmin; top: 95%; left: 10%;
+    background: radial-gradient(ellipse at 30% 50%, #93c5fd, #2a2a2e 70%),
+                radial-gradient(ellipse at 65% 40%, #3b82f6, #2a2a2e 65%);
+    animation-name: cloudDriftLeft; animation-duration: 115s; animation-delay: -75s;
+}
+.mobile-background span:nth-child(19) {
+    width: 48vmin; top: 32%; left: 60%;
+    background: radial-gradient(ellipse at 40% 50%, #60a5fa, #2a2a2e 70%),
+                radial-gradient(ellipse at 75% 45%, #93c5fd, #2a2a2e 65%);
+    animation-name: cloudDriftRight; animation-duration: 85s; animation-delay: -50s;
+}
+.mobile-background span:nth-child(20) {
+    width: 56vmin; top: 68%; left: 35%;
+    background: radial-gradient(ellipse at 25% 50%, #3b82f6, #2a2a2e 70%),
+                radial-gradient(ellipse at 55% 40%, #93c5fd, #2a2a2e 65%),
+                radial-gradient(ellipse at 85% 55%, #60a5fa, #2a2a2e 60%);
+    animation-name: cloudDriftLeft; animation-duration: 125s; animation-delay: -110s;
+}
+
 :root {
   --surface-bright: #39393b;
-  --on-secondary: #480081;
-  --on-secondary-fixed: #2c0051;
-  --inverse-primary: #006970;
-  --primary-fixed-dim: #00dbe9;
-  --on-primary-fixed: #002022;
-  --secondary-fixed: #efdbff;
+  --on-secondary: #1e3a5f;
+  --on-secondary-fixed: #001a3d;
+  --inverse-primary: #2563eb;
+  --primary-fixed-dim: #60a5fa;
+  --on-primary-fixed: #001a3d;
+  --secondary-fixed: #dbeafe;
   --on-tertiary: #2f3131;
   --tertiary-fixed-dim: #c6c6c7;
-  --primary: #dbfcff;
+  --primary: #dbeafe;
   --surface-container: #201f22;
   --tertiary-fixed: #e2e2e2;
   --on-surface: #e5e1e4;
   --surface-container-low: #1c1b1d;
-  --on-primary-container: #006970;
+  --on-primary-container: #131315;
   --on-error-container: #ffdad6;
   --on-background: #e5e1e4;
   --on-tertiary-fixed-variant: #454747;
-  --on-primary-fixed-variant: #004f54;
-  --outline: #849495;
+  --on-primary-fixed-variant: #1e40af;
+  --outline: #7989a8;
   --background: #131315;
   --inverse-surface: #e5e1e4;
   --error: #ffb4ab;
   --surface: #131315;
-  --outline-variant: #3b494b;
-  --on-secondary-fixed-variant: #6700b5;
+  --outline-variant: #3b4960;
+  --on-secondary-fixed-variant: #1e40af;
   --on-error: #690005;
-  --secondary-fixed-dim: #dcb8ff;
-  --primary-container: #00f0ff;
+  --secondary-fixed-dim: #93c5fd;
+  --primary-container: #ffffff;
   --surface-variant: #353437;
-  --secondary-container: #7701d0;
-  --on-primary: #00363a;
+  --secondary-container: #1e40af;
+  --on-primary: #001a3d;
   --surface-container-high: #2a2a2c;
   --inverse-on-surface: #313032;
   --error-container: #93000a;
-  --surface-tint: #00dbe9;
+  --surface-tint: #60a5fa;
   --surface-dim: #131315;
   --tertiary-container: #d9d9d9;
-  --on-secondary-container: #dcb7ff;
+  --on-secondary-container: #93c5fd;
   --on-tertiary-container: #5d5f5f;
   --tertiary: #f5f5f5;
-  --primary-fixed: #7df4ff;
+  --primary-fixed: #93c5fd;
   --surface-container-lowest: #0e0e10;
-  --secondary: #dcb8ff;
+  --secondary: #93c5fd;
   --on-tertiary-fixed: #1a1c1c;
-  --on-surface-variant: #b9cacb;
+  --on-surface-variant: #a9b9ca;
   --surface-container-highest: #353437;
 
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.08);
-  --text-gradient-end: #00f0ff;
+  --text-gradient-end: #3b82f6;
 }
 
 .light {
   --surface-bright: #e0e0e0;
   --on-secondary: #ffffff;
-  --on-secondary-fixed: #2c0051;
-  --inverse-primary: #00dbe9;
-  --primary-fixed-dim: #006970;
-  --on-primary-fixed: #002022;
-  --secondary-fixed: #efdbff;
+  --on-secondary-fixed: #001a3d;
+  --inverse-primary: #60a5fa;
+  --primary-fixed-dim: #2563eb;
+  --on-primary-fixed: #001a3d;
+  --secondary-fixed: #dbeafe;
   --on-tertiary: #ffffff;
   --tertiary-fixed-dim: #454747;
-  --primary: #006970;
+  --primary: #2563eb;
   --surface-container: #f5f5f7;
   --tertiary-fixed: #1a1c1c;
   --on-surface: #131315;
@@ -74,39 +327,39 @@
   --on-error-container: #410002;
   --on-background: #131315;
   --on-tertiary-fixed-variant: #454747;
-  --on-primary-fixed-variant: #004f54;
-  --outline: #707979;
-  --background: #ffffff;
+  --on-primary-fixed-variant: #1e40af;
+  --outline: #7989a8;
+  --background: #F0F4F8;
   --inverse-surface: #313032;
   --error: #ba1a1a;
-  --surface: #ffffff;
-  --outline-variant: #bfc8c8;
-  --on-secondary-fixed-variant: #6700b5;
+  --surface: #FFFFFF;
+  --outline-variant: #bfc8d8;
+  --on-secondary-fixed-variant: #1e40af;
   --on-error: #ffffff;
-  --secondary-fixed-dim: #dcb8ff;
-  --primary-container: #006970;
-  --surface-variant: #ebf2f2;
-  --secondary-container: #6700b5;
+  --secondary-fixed-dim: #93c5fd;
+  --primary-container: #2563eb;
+  --surface-variant: #ebf2f8;
+  --secondary-container: #1e40af;
   --on-primary: #ffffff;
   --surface-container-high: #ebebeb;
   --inverse-on-surface: #f4f0f2;
   --error-container: #ffdad6;
-  --surface-tint: #006970;
+  --surface-tint: #2563eb;
   --surface-dim: #dbd9dc;
   --tertiary-container: #ffffff;
   --on-secondary-container: #ffffff;
   --on-tertiary-container: #1a1c1c;
   --tertiary: #5d5f5f;
-  --primary-fixed: #a5eeff;
+  --primary-fixed: #93c5fd;
   --surface-container-lowest: #ffffff;
-  --secondary: #6700b5;
+  --secondary: #1e40af;
   --on-tertiary-fixed: #ffffff;
-  --on-surface-variant: #3f4848;
+  --on-surface-variant: #3f4860;
   --surface-container-highest: #e0e0e0;
 
   --glass-bg: rgba(0, 0, 0, 0.03);
   --glass-border: rgba(0, 0, 0, 0.08);
-  --text-gradient-end: #006970;
+  --text-gradient-end: #2563eb;
 }
 
 @theme {
@@ -178,6 +431,23 @@
 @utility font-body-sm { font-family: var(--font-body-sm); font-size: 14px; line-height: 1.4; letter-spacing: 0em; font-weight: 400; }
 @utility font-code { font-family: var(--font-code); font-size: 13px; line-height: 1.6; letter-spacing: 0em; font-weight: 500; }
 @utility font-label-caps { font-family: var(--font-label-caps); font-size: 12px; line-height: 1; letter-spacing: 0.05em; font-weight: 700; }
+
+/* === Mobile Spacing Utilities === */
+/* Apply to <section>: caps vertical padding at 10px each side on mobile */
+@utility section-pad {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Apply to sub-section headers/blocks: caps bottom margin at 10px on mobile */
+@utility gap-sub {
+  margin-bottom: 10px;
+}
+
+/* Apply to elements that need a 20px top gap between major sections on mobile */
+@utility gap-section {
+  margin-top: 20px;
+}
 
 @utility glass-card {
   background: var(--glass-bg);
@@ -277,5 +547,36 @@ html.lenis, html.lenis body {
   }
   html.light {
     color-scheme: light;
+  }
+}
+
+/* Consistent 10px horizontal padding on mobile for all structural elements */
+@media (max-width: 767px) {
+  section,
+  main,
+  header,
+  footer {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .pricing-title-mobile {
+    margin-bottom: 9px !important;
+  }
+
+  .pricing-label-mobile {
+    margin-bottom: 5px !important;
+  }
+
+  .pricing-section-top {
+    padding-top: 15px !important;
+  }
+
+  .solution-section-top {
+    padding-top: 15px !important;
+  }
+
+  .solution-title-mobile {
+    margin-bottom: 1px !important;
   }
 }

@@ -1,74 +1,123 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { Twitter, Github, Linkedin, Send } from 'lucide-react';
+import { MessageSquare, Mail, Github, Twitter, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-surface border-t border-outline-variant/30 py-4 md:py-10 px-[1%] md:px-12 w-full mt-auto">
-      <div className="max-w-[1440px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-        <div className="col-span-2 lg:col-span-1 space-y-2 md:space-y-4">
-          <div className="flex items-center justify-between lg:block">
-            <div className="text-lg md:text-2xl font-black text-on-surface tracking-tighter uppercase font-space-grotesk">RankFlow</div>
-            <div className="flex gap-2 lg:mt-4">
-              <a href="#" className="w-7 h-7 md:w-10 md:h-10 glass-card rounded-full flex items-center justify-center text-on-surface-variant hover:text-surface-tint transition-all">
-                <Twitter className="w-3 h-3 md:w-4 md:h-4" />
+    <footer className="border-t border-white/10 mt-auto" style={{ backgroundColor: '#000000' }}>
+      {/* Desktop Layout */}
+      <div className="hidden md:block px-6 py-10 max-w-7xl mx-auto">
+        <div className="flex justify-between items-start gap-8">
+          <div className="flex flex-col gap-3 max-w-xs">
+            <div className="flex items-center gap-2">
+              <div className="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center">
+                <MessageSquare className="w-5 h-5 text-on-primary" />
+              </div>
+              <span className="text-xl font-bold tracking-tight uppercase" style={{ color: '#ffffff' }}>Chatylink</span>
+            </div>
+            <p className="text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>
+              AI-powered customer engagement across every channel. One inbox, one dashboard, unlimited conversations.
+            </p>
+          </div>
+
+          <div className="flex gap-10">
+            <div className="flex flex-col gap-3">
+              <h4 className="text-sm font-bold uppercase tracking-wider mb-1" style={{ color: '#ffffff' }}>Product</h4>
+              <Link to="/" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Features</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Pricing</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>API Docs</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Integrations</Link>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h4 className="text-sm font-bold uppercase tracking-wider mb-1" style={{ color: '#ffffff' }}>Company</h4>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>About</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Contact</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Careers</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Blog</Link>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h4 className="text-sm font-bold uppercase tracking-wider mb-1" style={{ color: '#ffffff' }}>Resources</h4>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Help Center</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Community</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Tutorials</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Status</Link>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h4 className="text-sm font-bold uppercase tracking-wider mb-1" style={{ color: '#ffffff' }}>Legal</h4>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Privacy</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Terms</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Changelog</Link>
+              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Security</Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <h4 className="text-sm font-bold uppercase tracking-wider mb-1" style={{ color: '#ffffff' }}>Connect</h4>
+            <div className="flex gap-3">
+              <a href="#" className="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-all" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
+                <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-7 h-7 md:w-10 md:h-10 glass-card rounded-full flex items-center justify-center text-on-surface-variant hover:text-surface-tint transition-all">
-                <Github className="w-3 h-3 md:w-4 md:h-4" />
+              <a href="#" className="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-all" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
+                <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="w-7 h-7 md:w-10 md:h-10 glass-card rounded-full flex items-center justify-center text-on-surface-variant hover:text-surface-tint transition-all">
-                <Linkedin className="w-3 h-3 md:w-4 md:h-4" />
+              <a href="#" className="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-all" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-all" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
+                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
-          <p className="text-on-surface-variant font-body-sm leading-relaxed max-w-sm text-[10px] md:text-sm hidden md:block">
-            Elite intelligence for technical SEO strategists.
-          </p>
         </div>
-        
-        <div className="space-y-2">
-          <h5 className="text-on-surface font-label-caps uppercase tracking-widest text-[9px] md:text-xs font-bold">Product</h5>
-          <nav className="flex flex-col gap-1 md:gap-3">
-            <Link className="text-on-surface-variant hover:text-surface-tint transition-colors font-space-grotesk text-[10px] md:text-sm uppercase tracking-widest" to="#">API Docs</Link>
-            <Link className="text-on-surface-variant hover:text-surface-tint transition-colors font-space-grotesk text-[10px] md:text-sm uppercase tracking-widest" to="/developers">Devs</Link>
-            <Link className="text-on-surface-variant hover:text-surface-tint transition-colors font-space-grotesk text-[10px] md:text-sm uppercase tracking-widest" to="/pricing">Pricing</Link>
-          </nav>
-        </div>
-        
-        <div className="space-y-2">
-          <h5 className="text-on-surface font-label-caps uppercase tracking-widest text-[9px] md:text-xs font-bold">Company</h5>
-          <nav className="flex flex-col gap-1 md:gap-3">
-            <Link className="text-on-surface-variant hover:text-surface-tint transition-colors font-space-grotesk text-[10px] md:text-sm uppercase tracking-widest" to="/about">About</Link>
-            <Link className="text-on-surface-variant hover:text-surface-tint transition-colors font-space-grotesk text-[10px] md:text-sm uppercase tracking-widest" to="/contact">Contact</Link>
-            <Link className="text-on-surface-variant hover:text-surface-tint transition-colors font-space-grotesk text-[10px] md:text-sm uppercase tracking-widest" to="#">Legal</Link>
-          </nav>
-        </div>
-        
-        <div className="col-span-2 lg:col-span-1 space-y-2">
-          <h5 className="text-on-surface font-label-caps uppercase tracking-widest text-[9px] md:text-xs font-bold">Stay Updated</h5>
-          <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-            <input 
-              type="email" 
-              placeholder="Your email" 
-              className="flex-1 bg-surface-container-high border border-outline-variant/30 rounded px-3 py-1.5 text-[10px] text-on-surface focus:outline-none focus:border-surface-tint transition-colors placeholder:text-on-surface-variant/50"
-              required
-            />
-            <button 
-              type="submit" 
-              className="bg-primary-container text-on-primary px-3 py-1.5 rounded font-bold hover:opacity-90 transition-opacity cursor-pointer flex items-center justify-center shrink-0"
-              aria-label="Subscribe"
-            >
-              <Send className="w-3.5 h-3.5" />
-            </button>
-          </form>
-          <p className="text-on-surface-variant/60 text-[8px] uppercase tracking-widest hidden md:block">Signal only. No fluff.</p>
+
+        <div className="mt-8 pt-5 border-t border-white/10 flex justify-between items-center">
+          <p className="text-sm" style={{ color: 'rgba(255,255,255,0.5)' }}>&copy; {new Date().getFullYear()} Chatylink. All rights reserved.</p>
+          <p className="text-sm" style={{ color: 'rgba(255,255,255,0.5)' }}>Built for businesses who care.</p>
         </div>
       </div>
-      
-      <div className="max-w-[1440px] mx-auto mt-4 pt-4 border-t border-outline-variant/30 flex justify-center md:justify-between items-center">
-        <p className="font-space-grotesk text-[8px] md:text-xs uppercase tracking-[0.2em] text-on-surface-variant/60">
-          © {new Date().getFullYear()} RankFlow. Security Protocol Active.
-        </p>
+
+      {/* Mobile Layout */}
+      <div className="md:hidden px-[10px] py-5">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center">
+              <MessageSquare className="w-4 h-4 text-on-primary" />
+            </div>
+            <span className="text-lg font-bold tracking-tight uppercase" style={{ color: '#ffffff' }}>Chatylink</span>
+          </div>
+          <div className="flex gap-2">
+            <a href="#" className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
+              <Twitter className="w-4 h-4" />
+            </a>
+            <a href="#" className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
+              <Github className="w-4 h-4" />
+            </a>
+            <a href="#" className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
+              <Linkedin className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-4 grid grid-cols-3 gap-x-3 gap-y-2">
+          <Link to="/" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Features</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>About</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Help Center</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Pricing</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Contact</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Community</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>API Docs</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Careers</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Tutorials</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Integrations</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Blog</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Status</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Changelog</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Privacy</Link>
+          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Terms</Link>
+        </div>
+
+        <div className="mt-4 pt-3 border-t border-white/10">
+          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>&copy; {new Date().getFullYear()} Chatylink. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );
