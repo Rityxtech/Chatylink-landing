@@ -43,9 +43,9 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-3">
               <h4 className="text-sm font-bold uppercase tracking-wider mb-1" style={{ color: '#ffffff' }}>Legal</h4>
-              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Privacy</Link>
-              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Terms</Link>
-              <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Changelog</Link>
+              <Link to="/privacy" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Privacy Policy</Link>
+              <Link to="/data-deletion" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Data Deletion</Link>
+              <Link to="/terms" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Terms of Service</Link>
               <Link to="#" className="text-base hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Security</Link>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function Footer() {
               <a href="#" className="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-all" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-all" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
+              <a href="mailto:privacy@chatylink.com" className="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-all" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -110,9 +110,9 @@ export default function Footer() {
           <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Integrations</Link>
           <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Blog</Link>
           <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Status</Link>
-          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Changelog</Link>
-          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Privacy</Link>
-          <Link to="#" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Terms</Link>
+          <Link to="/privacy" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Privacy</Link>
+          <Link to="/data-deletion" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Deletion</Link>
+          <Link to="/terms" className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255,255,255,0.6)' }}>Terms</Link>
         </div>
 
         <div className="mt-4 pt-3 border-t border-white/10">

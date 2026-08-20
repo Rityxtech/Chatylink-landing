@@ -1,9 +1,12 @@
 import { useEffect } from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { ReactLenis } from 'lenis/react';
 import { ThemeProvider } from './lib/ThemeContext';
 import { WaitlistProvider } from './lib/WaitlistContext';
 import Home from './pages/Home';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import DataDeletion from './pages/DataDeletion';
+import TermsOfService from './pages/TermsOfService';
 import TopNavBar from './components/TopNavBar';
 import Footer from './components/Footer';
 import ChatWidget from './components/ChatWidget';
@@ -67,6 +70,10 @@ function AppContent() {
           <div className="flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/data-deletion" element={<DataDeletion />} />
+              <Route path="/terms" element={<TermsOfService />} />
+              <Route path="*" element={<Home />} />
             </Routes>
           </div>
           <Footer />
@@ -80,11 +87,11 @@ function AppContent() {
 export default function App() {
   return (
     <ThemeProvider>
-      <HashRouter>
+      <BrowserRouter>
         <WaitlistProvider>
           <AppContent />
         </WaitlistProvider>
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

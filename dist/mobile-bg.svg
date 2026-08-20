@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800" viewBox="0 0 400 800">
+  <defs>
+    <radialGradient id="blob1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e40af" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#1e40af" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="30"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="25"/></filter>
+    <filter id="blur3"><feGaussianBlur stdDeviation="35"/></filter>
+  </defs>
+
+  <rect width="400" height="800" fill="#131315"/>
+
+  <!-- Floating blob 1 -->
+  <circle cx="320" cy="120" r="80" fill="url(#blob1)" filter="url(#blur1)">
+    <animate attributeName="cy" values="120;80;120" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="320;340;320" dur="10s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Floating blob 2 -->
+  <circle cx="60" cy="300" r="100" fill="url(#blob2)" filter="url(#blur2)">
+    <animate attributeName="cy" values="300;340;300" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="60;80;60" dur="11s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Floating blob 3 -->
+  <circle cx="200" cy="500" r="70" fill="url(#blob3)" filter="url(#blur3)">
+    <animate attributeName="cy" values="500;460;500" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="200;180;200" dur="12s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Floating blob 4 -->
+  <circle cx="350" cy="650" r="90" fill="url(#blob1)" filter="url(#blur1)">
+    <animate attributeName="cy" values="650;690;650" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="350;330;350" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Floating blob 5 -->
+  <circle cx="100" cy="750" r="80" fill="url(#blob2)" filter="url(#blur2)">
+    <animate attributeName="cy" values="750;710;750" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="100;120;100" dur="13s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Small floating particles -->
+  <circle cx="150" cy="200" r="3" fill="#60a5fa" opacity="0.3">
+    <animate attributeName="cy" values="200;180;200" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="400" r="2" fill="#93c5fd" opacity="0.4">
+    <animate attributeName="cy" values="400;420;400" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="80" cy="550" r="2.5" fill="#60a5fa" opacity="0.3">
+    <animate attributeName="cy" values="550;530;550" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="330" cy="250" r="2" fill="#93c5fd" opacity="0.35">
+    <animate attributeName="cy" values="250;270;250" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.35;0.6;0.35" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="180" cy="680" r="3" fill="#60a5fa" opacity="0.3">
+    <animate attributeName="cy" values="680;700;680" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Wavy lines -->
+  <path d="M0,100 Q100,80 200,100 T400,100" stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.06">
+    <animate attributeName="d" values="M0,100 Q100,80 200,100 T400,100;M0,100 Q100,120 200,100 T400,100;M0,100 Q100,80 200,100 T400,100" dur="10s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0,350 Q100,330 200,350 T400,350" stroke="#60a5fa" stroke-width="1" fill="none" opacity="0.05">
+    <animate attributeName="d" values="M0,350 Q100,330 200,350 T400,350;M0,350 Q100,370 200,350 T400,350;M0,350 Q100,330 200,350 T400,350" dur="12s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0,600 Q100,580 200,600 T400,600" stroke="#93c5fd" stroke-width="1" fill="none" opacity="0.05">
+    <animate attributeName="d" values="M0,600 Q100,580 200,600 T400,600;M0,600 Q100,620 200,600 T400,600;M0,600 Q100,580 200,600 T400,600" dur="14s" repeatCount="indefinite"/>
+  </path>
+</svg>
