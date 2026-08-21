@@ -72,8 +72,12 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
                   className="p-6 md:p-8"
                 >
                   {/* Icon */}
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style={{ backgroundColor: 'rgba(59,130,246,0.10)', border: '1px solid rgba(59,130,246,0.20)' }}>
-                    <ChefHat className="w-7 h-7 text-primary" />
+                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 p-1.5 shadow-md border border-outline-variant/30" style={{ backgroundColor: 'var(--surface-container-low)' }}>
+                    <img 
+                      src="/logo.png" 
+                      alt="Chatylink" 
+                      className="w-full h-full object-contain rounded-xl" 
+                    />
                   </div>
 
                   <h2 className="text-xl md:text-2xl font-black text-on-surface mb-2 leading-tight">

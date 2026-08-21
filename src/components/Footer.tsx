@@ -8,12 +8,14 @@ export default function Footer() {
       <div className="hidden md:block px-6 py-10 max-w-7xl mx-auto">
         <div className="flex justify-between items-start gap-8">
           <div className="flex flex-col gap-3 max-w-xs">
-            <div className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center">
-                <MessageSquare className="w-5 h-5 text-on-primary" />
-              </div>
+            <Link to="/" className="flex items-center gap-2.5 group">
+              <img 
+                src="/logo.png" 
+                alt="Chatylink logo" 
+                className="w-9 h-9 object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform" 
+              />
               <span className="text-xl font-bold tracking-tight uppercase" style={{ color: '#ffffff' }}>Chatylink</span>
-            </div>
+            </Link>
             <p className="text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>
               AI-powered customer engagement across every channel. One inbox, one dashboard, unlimited conversations.
             </p>
@@ -78,12 +80,14 @@ export default function Footer() {
       {/* Mobile Layout */}
       <div className="md:hidden px-[10px] py-5">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center">
-              <MessageSquare className="w-4 h-4 text-on-primary" />
-            </div>
+          <Link to="/" className="flex items-center gap-2">
+            <img 
+              src="/logo.png" 
+              alt="Chatylink logo" 
+              className="w-8 h-8 object-contain rounded-lg shadow-sm" 
+            />
             <span className="text-lg font-bold tracking-tight uppercase" style={{ color: '#ffffff' }}>Chatylink</span>
-          </div>
+          </Link>
           <div className="flex gap-2">
             <a href="#" className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}>
               <Twitter className="w-4 h-4" />

@@ -14,7 +14,14 @@ export default function TopNavBar() {
     <header className="fixed top-0 w-full z-50 flex justify-between items-center px-[10px] md:px-8 h-14 md:h-20 max-w-full mx-auto backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_0_20px_rgba(59,130,246,0.05)] font-space-grotesk tracking-tight" style={{ backgroundColor: 'var(--surface)' }}>
       <div className="flex items-center gap-12 w-full max-w-screen-2xl mx-auto justify-between">
         <div className="flex items-center gap-12">
-          <Link to="/" className="text-xl md:text-2xl font-bold tracking-tighter text-on-surface uppercase">Chatylink</Link>
+          <Link to="/" className="flex items-center gap-2.5 text-xl md:text-2xl font-bold tracking-tighter text-on-surface uppercase group">
+            <img 
+              src="/logo.png" 
+              alt="Chatylink logo" 
+              className="w-8 h-8 md:w-9 md:h-9 object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform" 
+            />
+            <span>Chatylink</span>
+          </Link>
           <div className="hidden lg:flex gap-8">
             <Link className={`transition-colors ${location.pathname === '/' ? 'text-surface-tint border-b-2 border-surface-tint pb-1' : 'text-on-surface-variant hover:text-on-surface'}`} to="/">Features</Link>
           </div>

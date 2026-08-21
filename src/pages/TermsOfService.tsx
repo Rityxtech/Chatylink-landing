@@ -33,14 +33,18 @@ export default function TermsOfService() {
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
           
-          <div className="flex items-center gap-2.5 text-xs font-bold text-primary tracking-widest uppercase mb-3">
-            <FileText className="w-4 h-4" />
-            <span>Legal Agreement</span>
+          <div className="flex items-center gap-3 mb-4">
+            <img src="/logo.png" alt="Chatylink logo" className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-xl shadow-sm border border-outline-variant/30 p-1 bg-surface" />
+            <div>
+              <div className="flex items-center gap-2 text-xs font-bold text-primary tracking-widest uppercase">
+                <FileText className="w-3.5 h-3.5" />
+                <span>Legal Agreement</span>
+              </div>
+              <h1 className="text-2xl md:text-4xl font-black text-on-surface tracking-tight">
+                Chatylink Terms of Service
+              </h1>
+            </div>
           </div>
-
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-black text-on-surface tracking-tight mb-4">
-            Chatylink Terms of Service
-          </h1>
 
           <div className="flex flex-wrap items-center gap-3 md:gap-6 text-xs md:text-sm text-on-surface-variant font-mono">
             <span className="bg-surface-container-low px-3 py-1 rounded-full border border-outline-variant/30">

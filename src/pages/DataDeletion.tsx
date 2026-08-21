@@ -46,14 +46,18 @@ export default function DataDeletion() {
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-red-500/5 rounded-full blur-3xl pointer-events-none" />
           
-          <div className="flex items-center gap-2.5 text-xs font-bold text-primary tracking-widest uppercase mb-3">
-            <Trash2 className="w-4 h-4 text-red-400" />
-            <span>Data Privacy & Control</span>
+          <div className="flex items-center gap-3 mb-4">
+            <img src="/logo.png" alt="Chatylink logo" className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-xl shadow-sm border border-outline-variant/30 p-1 bg-surface" />
+            <div>
+              <div className="flex items-center gap-2 text-xs font-bold text-red-400 tracking-widest uppercase">
+                <Trash2 className="w-3.5 h-3.5" />
+                <span>Data Privacy & Control</span>
+              </div>
+              <h1 className="text-2xl md:text-4xl font-black text-on-surface tracking-tight">
+                Chatylink - User Data Deletion Instructions
+              </h1>
+            </div>
           </div>
-
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-black text-on-surface tracking-tight mb-4">
-            Chatylink - User Data Deletion Instructions
-          </h1>
 
           <p className="text-xs md:text-base text-on-surface-variant leading-relaxed">
             Chatylink values your control over your data. In compliance with <strong>Meta Platform Policies</strong>, users can request the deletion of their personal data and connected channel credentials at any time.

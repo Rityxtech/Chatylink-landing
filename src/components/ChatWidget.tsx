@@ -50,9 +50,11 @@ export default function ChatWidget() {
             {/* Header */}
             <div className="p-4 bg-surface-container/50 border-b border-outline-variant/30 flex items-center gap-3 justify-between shrink-0">
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center">
-                  <Rocket className="w-4 h-4 text-on-primary" />
-                </div>
+                <img 
+                  src="/logo.png" 
+                  alt="Chatylink Assistant" 
+                  className="w-9 h-9 rounded-xl object-contain bg-surface border border-outline-variant/30 p-1 shadow-sm" 
+                />
                 <div>
                   <div className="font-label-caps text-on-surface">Chatylink Assistant</div>
                   <div className="text-[10px] text-surface-tint flex items-center gap-1 font-code">
@@ -141,9 +143,13 @@ export default function ChatWidget() {
 
           <button
             onClick={toggleChat}
-            className={`w-14 h-14 bg-primary-container rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(59,130,246,0.4)] cursor-pointer hover:scale-110 transition-transform relative ${isOpen ? 'rotate-90 scale-90 opacity-0 pointer-events-none' : ''}`}
+            className={`w-14 h-14 bg-surface rounded-full flex items-center justify-center border-2 border-primary/40 shadow-[0_0_30px_rgba(59,130,246,0.4)] cursor-pointer hover:scale-110 transition-transform relative p-2 ${isOpen ? 'rotate-90 scale-90 opacity-0 pointer-events-none' : ''}`}
           >
-            <MessageSquare className="w-6 h-6 text-on-primary" />
+            <img 
+              src="/logo.png" 
+              alt="Chatylink" 
+              className="w-full h-full object-contain rounded-full" 
+            />
 
             {/* Notification Badge */}
             {hasNotification && (
